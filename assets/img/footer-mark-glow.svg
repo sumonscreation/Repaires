@@ -1,0 +1,20 @@
+<svg width="1920" height="411.962" viewBox="0 0 1920 411.962" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="412">
+<rect width="1920" height="411.962" fill="white"/>
+</mask>
+<g mask="url(#mask)">
+<g filter="url(#blur)">
+<path d="M1264.3 112.133C898.698 47.4516 157.422 120.955 0 240.225C1298.45 130.983 1336.39 254.543 1264.3 362.741C1229.23 415.376 1605.31 411.923 1605.31 411.923C1677.95 257.097 1629.9 176.815 1264.3 112.133Z" fill="url(#fill)"/>
+</g>
+</g>
+<defs>
+<filter id="blur" x="-350" y="-261.924" width="2334.09" height="1023.89" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="175"/>
+</filter>
+<linearGradient id="fill" x1="494.433" y1="250.023" x2="1140.12" y2="805.658" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007BFF"/>
+<stop offset="0.798077" stop-color="white"/>
+<stop offset="1" stop-color="#007BFF"/>
+</linearGradient>
+</defs>
+</svg>
