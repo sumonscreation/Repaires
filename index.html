@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mobile phone repair website demo: same-day screen, battery, charging port and water damage repairs with warranty.">
+  <meta name="keywords" content="handyman, home repair, repair services, appliance repair, computer repair, mobile repair, ac repair, electrician, maintenance, service booking, admin dashboard, tailwind css template, html template">
+  <meta name="author" content="sumons">
+  <title>Mobile Repair | Fixumi</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/img/favicon.webp">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch.webp">
+  <!-- Preload fonts -->
+  <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/remixicon.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="assets/css/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/tom-select.min.css">
+  <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="assets/css/aos.min.css">
+  <noscript><style>[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+  <!-- Tailwind Generated CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Theme and direction before the first paint -->
+  <script src="assets/js/theme30f4.js?v=3"></script>
+</head>
+<body class="bg-bg-primary text-text-primary font-sans">
+  <!-- Start Preloader -->
+  <div class="preloader" data-preloader aria-hidden="true">
+    <span class="preloader-bubbles"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+    <span class="preloader-orb"></span>
+  </div>
+  <!-- End Preloader -->
+  <!-- Start Header Top Bar -->
+  <div class="bg-primary text-body-sm text-white [--topbar-icon-active:var(--color-emergency-deep)]" data-topbar>
+    <div class="container-full max-w-411 flex h-12.5 items-center gap-6">
+      <p class="hidden sm:block">
+        <span>Working Hour:</span> Mon-Sat 9:00AM -8:00PM
+      </p>
+      <p class="hidden truncate lg:block">
+        <span>Email:</span>
+        <a href="https://html.sumons.com/cdn-cgi/l/email-protection#93fafdf5fcd3d5faebe6fefabdf0fcfe" class="topbar-icon"><span class="__cf_email__" data-cfemail="721b1c141d32341b0a071f1b5c111d1f">[email&#160;protected]</span></a>
+      </p>
+      <div class="hidden items-center gap-4 lg:flex">
+        <span>Follow:</span>
+        <a href="https://www.facebook.com/" class="topbar-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><span><i class="ri-facebook-fill"></i></span></a>
+        <a href="https://www.instagram.com/" class="topbar-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><span><i class="ri-instagram-line"></i></span></a>
+        <a href="https://www.linkedin.com/" class="topbar-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span><i class="ri-linkedin-fill"></i></span></a>
+      </div>
+      <div class="flex flex-1 items-center gap-4 sm:ms-auto sm:flex-none">
+        <a href="tel:+14239524294" class="me-auto flex items-center gap-1.5 font-medium group sm:me-0 xl:hidden">
+          <span class="text-base"><i class="ri-phone-line"></i></span>
+          <bdi dir="ltr" class="group-hover:underline">+1 423-952-4294</bdi>
+        </a>
+        <div class="relative">
+          <button type="button" class="topbar-icon text-base flex" data-lang-toggle aria-controls="lang-menu" aria-expanded="false" aria-haspopup="true" aria-label="Change language">
+            <span class="text-base"><i class="ri-global-line"></i></span>
+          </button>
+          <ul class="topbar-menu" id="lang-menu" data-lang-menu>
+            <li><button type="button" class="lang-option" data-lang-code="en" aria-current="true">English</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="es" aria-current="false">Español</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="fr" aria-current="false">Français</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="de" aria-current="false">Deutsch</button></li>
+          </ul>
+        </div>
+        <a href="cart.html" class="topbar-icon text-base" aria-label="Cart">
+          <span><i class="ri-shopping-cart-line"></i></span>
+        </a>
+        <a href="login.html" class="topbar-icon text-base" aria-label="Account">
+          <span><i class="ri-user-line"></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Header Top Bar -->
+  <!-- Start Main Header -->
+  <header class="header-overlay sticky top-0 z-50 text-white transition-[background-color,box-shadow] duration-300 data-stuck:bg-ink data-stuck:shadow-header">
+    <div class="container-full max-w-411 flex h-19 items-center gap-4 lg:h-25">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Fixumi home">
+        <img src="assets/img/logo-light.svg" alt="Fixumi logo">
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="flex flex-col px-3 py-2 lg:h-full lg:flex-row lg:p-0">
+          <li class="#">
+            <a href="index.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Home</span>
+              <!-- <span><i class="ri-add-line dropdown-caret text-base"></i></span> -->
+            </a>
+           <!--  <ul class="dropdown-menu">
+              <li><a href="index.html" class="dropdown-link">All Type Repair</a></li>
+              <li><a href="home-v2.html" class="dropdown-link">Computer Repair</a></li>
+              <li><a href="home-v3.html" class="dropdown-link" aria-current="page">Mobile Repair</a></li>
+              <li><a href="home-v4.html" class="dropdown-link">Electrical Repair</a></li>
+              <li><a href="home-v5.html" class="dropdown-link">Air Condition Repair</a></li>
+            </ul> -->
+          </li>
+          <li class="hidden xl:block"><a href="about-us.html" class="nav-link p-2.5">About</a></li>
+          <li class="dropdown">
+            <button type="button" class="nav-link p-2.5" aria-expanded="false">
+              <span>Services</span>
+              <span><i class="ri-add-line dropdown-caret text-base"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="services.html" class="dropdown-link">All Services</a></li>
+              <li><a href="service-details.html" class="dropdown-link">Service Details</a></li>
+              <li><a href="pricing.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="book-schedule.html" class="dropdown-link">Book A Schedule</a></li>
+            </ul>
+          </li>
+          <!-- <li class="dropdown">
+            <button type="button" class="nav-link p-2.5" aria-expanded="false">
+              <span>Pages</span>
+              <span><i class="ri-add-line dropdown-caret text-base"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="xl:hidden" data-nav-compact><a href="about-us.html" class="dropdown-link">About</a></li>
+              <li><a href="technician.html" class="dropdown-link">Technicians</a></li>
+              <li><a href="technician-details.html" class="dropdown-link">Technician Details</a></li>
+              <li><a href="projects.html" class="dropdown-link">Projects</a></li>
+              <li><a href="project-details.html" class="dropdown-link">Project Details</a></li>
+              <li><a href="testimonials.html" class="dropdown-link">Testimonials</a></li>
+              <li><a href="store-locator.html" class="dropdown-link">Store Locator</a></li>
+              <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+              <li><a href="error.html" class="dropdown-link">404 Error</a></li>
+            </ul>
+          </li> -->
+          <li class="dropdown">
+            <a href="blog.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Blog</span>
+              <span><i class="#"></i></span>
+            </a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="blog.html" class="dropdown-link">Blog Grid</a></li>
+              <li><a href="blog-v2.html" class="dropdown-link">Blog List</a></li>
+              <li><a href="blog-details.html" class="dropdown-link">Blog Details</a></li>
+            </ul> -->
+          </li>
+          <li class="dropdown">
+            <a href="shop.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Shop</span>
+              <span><i class="#"></i></span>
+            </a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="shop.html" class="dropdown-link">Shop</a></li>
+              <li><a href="shop-details.html" class="dropdown-link">Shop Details</a></li>
+              <li><a href="cart.html" class="dropdown-link">Cart</a></li>
+              <li><a href="checkout.html" class="dropdown-link">Checkout</a></li>
+            </ul> -->
+          </li>
+          <li><a href="contact-us.html" class="nav-link p-2.5">Contact</a></li>
+          <li class="p-2.5 lg:hidden">
+            <a href="book-schedule.html" class="btn-primary w-full">
+              <span>Book A Repair</span>
+              <span><i class="ri-calendar-line text-base"></i></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="ms-auto flex items-center gap-4 lg:ms-0 lg:gap-6">
+        <div class="hidden xl:block text-body">
+          <span>Need Support?</span>
+          <a href="tel:+14239524294" class="block font-heading text-xl font-semibold text-secondary transition-colors duration-300 hover:text-primary">
+            <bdi dir="ltr">+1 423-952-4294</bdi>
+          </a>
+        </div>
+        <button type="button" class="grid size-10 place-items-center rounded-full bg-bg-muted text-text-primary transition-colors duration-300 hover:bg-primary hover:text-text-inverse aria-expanded:bg-primary aria-expanded:text-text-inverse lg:size-12.5" data-search-toggle aria-controls="header-search" aria-expanded="false" aria-label="Search">
+          <span class="text-base" data-icon="open"><i class="ri-search-line"></i></span>
+          <span class="text-base hidden" data-icon="close"><i class="ri-close-line"></i></span>
+        </button>
+        <a href="book-schedule.html" class="btn-primary hidden lg:inline-flex">
+          <span>Book A Repair</span>
+          <span><i class="ri-calendar-line text-base"></i></span>
+        </a>
+        <button type="button" class="-me-2 p-2 transition-colors duration-300 hover:text-primary aria-expanded:text-primary lg:hidden" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Toggle menu">
+          <span><i class="ri-menu-line text-2xl" data-icon="open"></i></span>
+          <span><i class="ri-close-line hidden text-2xl" data-icon="close"></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="header-search" id="header-search" data-search-panel>
+      <form role="search" class="container-full max-w-411 flex items-center gap-3 py-5">
+        <label for="header-search-input" class="sr-only">Search the site</label>
+        <input id="header-search-input" type="search" autocomplete="off" placeholder="What do you need fixed?" class="h-11.5 md:h-13.5 min-w-0 flex-1 rounded-base bg-bg-muted px-4 text-body text-text-primary border border-primary outline-none placeholder:text-text-secondary">
+        <button type="submit" class="btn-primary">
+          <span><i class="ri-search-line text-base"></i></span>
+          <span class="hidden xsm:inline">Search</span>
+        </button>
+      </form>
+    </div>
+  </header>
+  <!-- End Main Header -->
+  <!-- Start Hero Section -->
+  <section class="phone-glow relative isolate -mt-19 overflow-hidden bg-ink text-white lg:-mt-25" aria-labelledby="hero-title">
+    <img src="assets/img/hero-phone-repair-hand.webp" alt="Gloved hand holding a phone display, camera module and circuit board" class="absolute bottom-0 inset-s-0 -z-1 w-[85%] opacity-50 rtl:-scale-x-100 md:w-[45.41%]">
+    <div class="container-full max-w-411 flex flex-col gap-8 md:gap-12 pt-31 pb-12.5 sm:pb-16 lg:pt-40 xl:min-h-257.5 xl:gap-7.5 xl:pt-49.5 xl:pb-36">
+      <div class="flex flex-col items-center text-center">
+        <h1 id="hero-title" class="font-heading text-[34px] font-bold leading-[1.1] xsm:text-[44px] sm:text-[56px] lg:text-[72px] 2xl:text-8xl xl:leading-25">Same-Day Phone Repair. <br class="hidden lg:inline">No Data Wipe. Guaranteed.</h1>
+        <p class="mt-4 max-w-272 font-heading text-body font-semibold leading-6 xsm:text-h5 xsm:leading-7 sm:mt-6 xl:mt-8">Cracked screen? Dead battery? We fix iPhones, Samsungs, and Pixels in under 60 minutes while you wait.</p>
+        <a href="services.html" class="btn-primary mt-6 lg:mt-8">
+          <span>View Our Services</span>
+          <span><i class="ri-arrow-right-s-line icon-directional text-base"></i></span>
+        </a>
+      </div>
+      <div class="hidden md:flex md:items-end md:justify-between xl:mt-auto">
+        <div>
+          <img src="assets/img/icons/review-rating-light.svg" alt="Five-star rating icon" class="size-12.5">
+          <p class="font-heading text-[34px] font-bold leading-[1.2] lg:text-[44px] lg:leading-13.5"><bdi dir="ltr"><span class="counter" data-count-to="4.9">4.9</span>/5</bdi></p>
+          <p class="text-body leading-6.5"><bdi dir="ltr">(2.6k+ Clients reviews)</bdi></p>
+        </div>
+        <div class="relative aspect-611/312 w-full max-w-152.75">
+          <img src="assets/img/hero-phone-repair-3.webp" alt="Technician in safety glasses inspecting an opened smartphone" class="absolute inset-e-[3.24%] top-[13.53%] aspect-square w-[40.9%] rotate-10 rounded-[10px] lg:rounded-[20px] object-cover rtl:-rotate-10">
+          <img src="assets/img/hero-phone-repair-2.webp" alt="Gloved technician fitting a new battery into an opened phone" class="absolute inset-s-[3.24%] top-[13.53%] aspect-square w-[40.9%] -rotate-10 rounded-[10px] lg:rounded-[20px] object-cover rtl:rotate-10">
+          <img src="assets/img/hero-phone-repair-1.webp" alt="Technician in black gloves replacing a smartphone screen" class="absolute inset-s-[24.48%] top-0 aspect-square w-[51.05%] rounded-[10px] lg:rounded-[20px] object-cover shadow-[0_10px_50px_0_var(--color-text-primary)]">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+  <!-- Start Repair Ticker Section -->
+  <section class="bg-secondary py-4 md:py-5 xl:py-5.75 text-text-primary" aria-labelledby="what-we-fix-title">
+    <h2 id="what-we-fix-title" class="sr-only">What we fix</h2>
+    <div class="repair-ticker swiper mx-auto w-full max-w-full-width" data-marquee="1" data-speed="8000" data-gap="32" data-md-gap="48" data-xl-gap="70" data-touch="1">
+      <ul class="swiper-wrapper">
+        <li class="marquee-slide swiper-slide"><span><i class="ri-smartphone-line"></i></span><span>Black screen? We restore display.</span></li>
+        <li class="marquee-slide swiper-slide"><span><i class="ri-plug-3-line"></i></span><span>Charging port loose? We solder it.</span></li>
+        <li class="marquee-slide swiper-slide"><span><i class="ri-battery-2-charge-line"></i></span><span>Battery swelling? Safe disposal included.</span></li>
+        <li class="marquee-slide swiper-slide"><span><i class="ri-camera-line"></i></span><span>Blurry photos? Fixed.</span></li>
+        <li class="marquee-slide swiper-slide"><span><i class="ri-contrast-drop-2-line"></i></span><span>Water damage? We recover data.</span></li>
+        <li class="marquee-slide swiper-slide" aria-hidden="true"><span><i class="ri-smartphone-line"></i></span><span>Black screen? We restore display.</span></li>
+        <li class="marquee-slide swiper-slide" aria-hidden="true"><span><i class="ri-plug-3-line"></i></span><span>Charging port loose? We solder it.</span></li>
+        <li class="marquee-slide swiper-slide" aria-hidden="true"><span><i class="ri-battery-2-charge-line"></i></span><span>Battery swelling? Safe disposal included.</span></li>
+        <li class="marquee-slide swiper-slide" aria-hidden="true"><span><i class="ri-camera-line"></i></span><span>Blurry photos? Fixed.</span></li>
+        <li class="marquee-slide swiper-slide" aria-hidden="true"><span><i class="ri-contrast-drop-2-line"></i></span><span>Water damage? We recover data.</span></li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Repair Ticker Section -->
+  <!-- Start About Section -->
+  <section class="pt-12.5 sm:pt-16 xl:pt-25" aria-labelledby="about-title">
+    <div class="container grid gap-8 lg:grid-cols-4 lg:gap-6">
+      <div class="relative mx-auto w-full max-w-162 lg:col-span-2 lg:max-w-none">
+        <img src="assets/img/about-phone-repair.webp" alt="Technician repairing a smartphone circuit board with a precision screwdriver" class="aspect-536/650 w-full rounded-[10px] lg:rounded-xl object-cover sm:w-[82.716%] xl:rounded-[20px]">
+        <p class="absolute top-3 inset-s-[85.33%] hidden text-body-lg leading-6 whitespace-nowrap sm:block"><span class="block rotate-180 [writing-mode:vertical-rl]">Working Hour: <bdi dir="ltr" class="text-text-secondary">Mon-Sat 9:00AM -8:00PM</bdi></span></p>
+        <div class="absolute inset-e-4 bottom-4 flex h-56.5 w-50 flex-col rounded-[10px] lg:rounded-xl bg-secondary px-6 pt-2.75 text-text-primary sm:inset-e-auto sm:inset-s-[62.64%] sm:bottom-12.5 lg:inset-s-auto lg:inset-e-0 xl:inset-e-auto xl:inset-s-[62.64%] xl:rounded-[20px]">
+          <p class="font-heading text-[56px] font-bold leading-16.25"><bdi dir="ltr"><span class="counter" data-count-to="15">15</span>+</bdi></p>
+          <p class="-mt-1.5 text-body leading-6.5">Years of Experience</p>
+          <img src="assets/img/experience-technician.svg" alt="Fixumi technician illustration" class="absolute bottom-0 inset-s-0 inset-e-0 mx-auto w-32.75">
+        </div>
+      </div>
+      <div class="lg:col-span-2 xl:pt-12.5">
+        <p class="flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-caption leading-3.75 text-primary">
+          <span class="size-1.5 rounded-full bg-primary"></span>
+          <span>About Fixumi</span>
+        </p>
+        <h2 data-aos="fade-up" id="about-title" class="mt-2 font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11">Built To Outlast The Drop.</h2>
+        <blockquote class="mt-4 flex gap-3.5 rounded-[10px] bg-bg-card px-4 py-6 xl:px-6">
+          <img src="assets/img/icons/quote-mark.svg" alt="Quotation mark" class="icon-directional mt-0.75 size-12.5 shrink-0">
+          <p class="font-heading text-h5 font-semibold leading-7">“We don't just fix phones — we restore confidence. Every repair carries the Fixumi promise.”</p>
+        </blockquote>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:mt-6 lg:gap-y-6 xl:gap-x-6">
+          <div class="rounded-[10px] lg:rounded-xl bg-bg-card px-4 py-6 xl:rounded-[20px] xl:px-6">
+            <img src="assets/img/icons/about-vision.svg" alt="Vision icon" class="size-12.5">
+            <h3 class="mt-2 font-heading text-h4 font-semibold leading-8">Vision</h3>
+            <p class="mt-2 text-body leading-6.5 text-text-secondary">To become the global standard for sustainable, same-day device repair — where quality meets speed, and every device gets a second life.</p>
+          </div>
+          <div class="rounded-[10px] lg:rounded-xl bg-bg-card px-4 py-6 xl:rounded-[20px] xl:px-6">
+            <img src="assets/img/icons/about-mission.svg" alt="Mission icon" class="size-12.5">
+            <h3 class="mt-2 font-heading text-h4 font-semibold leading-8">Mission</h3>
+            <p class="mt-2 text-body leading-6.5 text-text-secondary">Empower people with affordable, transparent repairs. No data loss, no surprises — just honest work backed by a 6-month warranty.</p>
+          </div>
+        </div>
+        <ul class="mt-4 lg:mt-6 flex flex-wrap gap-2 text-body-sm leading-5.25 text-text-secondary">
+          <li class="flex items-center gap-2.5 rounded-full border border-border-muted bg-bg-primary px-2.5">
+            <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+            <bdi dir="ltr">1‑hour express</bdi>
+          </li>
+          <li class="flex items-center gap-2.5 rounded-full border border-border-muted bg-bg-primary px-2.5">
+            <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+            <span>OEM‑grade parts</span>
+          </li>
+          <li class="flex items-center gap-2.5 rounded-full border border-border-muted bg-bg-primary px-2.5">
+            <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+            <span>data privacy</span>
+          </li>
+          <li class="flex items-center gap-2.5 rounded-full border border-border-muted bg-bg-primary px-2.5">
+            <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+            <span>price match</span>
+          </li>
+          <li class="flex items-center gap-2.5 rounded-full border border-border-muted bg-bg-primary px-2.5">
+            <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+            <bdi dir="ltr">6‑mo warranty</bdi>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+  <!-- Start Service Section -->
+  <section class="py-12.5 sm:py-16 xl:py-25" aria-labelledby="services-title">
+    <div class="container flex flex-col">
+      <div>
+        <div class="lg:sticky lg:top-25">
+          <p class="mx-auto flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-caption leading-3.75 text-primary">
+            <span class="size-1.5 rounded-full bg-primary"></span>
+            <span>Our Services</span>
+          </p>
+          <h2 data-aos="fade-up" id="services-title" class="mt-2 text-center font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11">Expert Repair For All Major Smartphone Brands</h2>
+        </div>
+        <ul class="mt-8 flex flex-col gap-4 xl:gap-6">
+          <li class="service-stack-card grid gap-4 md:gap-6 rounded-[10px] lg:rounded-xl bg-card-sun px-4 py-6 sm:px-6 md:grid-cols-2 lg:grid-cols-[400fr_424fr_400fr] xl:rounded-[20px]">
+            <div class="flex items-center gap-4 md:col-span-2 lg:col-span-1 lg:flex-col lg:items-start">
+              <span class="block size-16.25 shrink-0 rounded-full bg-bg-primary p-4 md:size-25 md:p-6.25"><img src="assets/img/icons/mobile-service-screen.svg" alt="Screen and LCD repair icon" class="size-full"></span>
+              <h3 class="font-heading text-h4 font-semibold leading-8">Screen & LCD</h3>
+            </div>
+            <div class="relative">
+              <img src="assets/img/mobile-service-screen.webp" alt="Technician lifting a cracked smartphone screen off its frame on a repair mat" loading="lazy" class="aspect-424/250 w-full rounded-[10px] lg:rounded-xl object-cover xl:rounded-[20px]">
+              <p class="absolute inset-s-4 top-4 flex items-center gap-2.5 rounded-full bg-bg-primary px-2.5 py-px text-body-sm leading-5.25 text-text-secondary">
+                <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+                <bdi dir="ltr">60‑Min Express</bdi>
+              </p>
+            </div>
+            <div class="flex flex-col items-start lg:pt-6">
+              <p class="font-heading text-h4 font-semibold leading-8">From <bdi dir="ltr">$49</bdi></p>
+              <p class="mt-2 text-body-lg leading-6 md:mt-4">OLED / LCD replacement, digitizer fix, touch restoration. Fixumi Glass Shield included.</p>
+              <a href="service-details.html" class="btn-primary mt-4 md:mt-8">
+                <span>Learn More</span>
+                <span><i class="ri-arrow-right-s-line icon-directional text-base"></i></span>
+              </a>
+            </div>
+          </li>
+          <li class="service-stack-card grid gap-4 md:gap-6 rounded-[10px] lg:rounded-xl bg-card-olive px-4 py-6 sm:px-6 md:grid-cols-2 lg:grid-cols-[400fr_424fr_400fr] xl:rounded-[20px] [--i:1]">
+            <div class="flex items-center gap-4 md:col-span-2 lg:col-span-1 lg:flex-col lg:items-start">
+              <span class="block size-16.25 shrink-0 rounded-full bg-bg-primary p-4 md:size-25 md:p-6.25"><img src="assets/img/icons/mobile-service-battery.svg" alt="Battery replacement icon" class="size-full"></span>
+              <h3 class="font-heading text-h4 font-semibold leading-8">Battery Replacement</h3>
+            </div>
+            <div class="relative">
+              <img src="assets/img/mobile-service-battery.webp" alt="Gloved technician removing the battery from an opened smartphone" loading="lazy" class="aspect-424/250 w-full rounded-[10px] lg:rounded-xl object-cover xl:rounded-[20px]">
+              <p class="absolute inset-s-4 top-4 flex items-center gap-2.5 rounded-full bg-bg-primary px-2.5 py-px text-body-sm leading-5.25 text-text-secondary">
+                <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+                <bdi dir="ltr">18‑Mo Warranty</bdi>
+              </p>
+            </div>
+            <div class="flex flex-col items-start lg:pt-6">
+              <p class="font-heading text-h4 font-semibold leading-8">From <bdi dir="ltr">$49</bdi></p>
+              <p class="mt-2 text-body-lg leading-6 md:mt-4">Fast charging restoration, health recalibration. Cycle‑tested cells with 18‑month life.</p>
+              <a href="service-details.html" class="btn-primary mt-4 md:mt-8">
+                <span>Learn More</span>
+                <span><i class="ri-arrow-right-s-line icon-directional text-base"></i></span>
+              </a>
+            </div>
+          </li>
+          <li class="service-stack-card grid gap-4 md:gap-6 rounded-[10px] lg:rounded-xl bg-card-sky px-4 py-6 sm:px-6 md:grid-cols-2 lg:grid-cols-[400fr_424fr_400fr] xl:rounded-[20px] [--i:2]">
+            <div class="flex items-center gap-4 md:col-span-2 lg:col-span-1 lg:flex-col lg:items-start">
+              <span class="block size-16.25 shrink-0 rounded-full bg-bg-primary p-4 md:size-25 md:p-6.25"><img src="assets/img/icons/mobile-service-water.svg" alt="Water damage repair icon" class="size-full"></span>
+              <h3 class="font-heading text-h4 font-semibold leading-8">Water Damage</h3>
+            </div>
+            <div class="relative">
+              <img src="assets/img/mobile-service-water.webp" alt="Technician prying open a water-damaged phone with a plastic tool" loading="lazy" class="aspect-424/250 w-full rounded-[10px] lg:rounded-xl object-cover xl:rounded-[20px]">
+              <p class="absolute inset-s-4 top-4 flex items-center gap-2.5 rounded-full bg-bg-primary px-2.5 py-px text-body-sm leading-5.25 text-text-secondary">
+                <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+                <span>Data Recovery</span>
+              </p>
+            </div>
+            <div class="flex flex-col items-start lg:pt-6">
+              <p class="font-heading text-h4 font-semibold leading-8">From <bdi dir="ltr">$79</bdi></p>
+              <p class="mt-2 text-body-lg leading-6 md:mt-4">Ultrasonic cleaning, corrosion removal, board‑level diagnostics. 85% success within 48h.</p>
+              <a href="service-details.html" class="btn-primary mt-4 md:mt-8">
+                <span>Learn More</span>
+                <span><i class="ri-arrow-right-s-line icon-directional text-base"></i></span>
+              </a>
+            </div>
+          </li>
+          <li class="service-stack-card grid gap-4 md:gap-6 rounded-[10px] lg:rounded-xl bg-card-peach px-4 py-6 sm:px-6 md:grid-cols-2 lg:grid-cols-[400fr_424fr_400fr] xl:rounded-[20px] [--i:3]">
+            <div class="flex items-center gap-4 md:col-span-2 lg:col-span-1 lg:flex-col lg:items-start">
+              <span class="block size-16.25 shrink-0 rounded-full bg-bg-primary p-4 md:size-25 md:p-6.25"><img src="assets/img/icons/mobile-service-charging.svg" alt="Charging port repair icon" class="size-full"></span>
+              <h3 class="font-heading text-h4 font-semibold leading-8">Charging Port & Flex</h3>
+            </div>
+            <div class="relative">
+              <img src="assets/img/mobile-service-charging.webp" alt="USB-C cable being plugged into a phone's charging port" loading="lazy" class="aspect-424/250 w-full rounded-[10px] lg:rounded-xl object-cover xl:rounded-[20px]">
+              <p class="absolute inset-s-4 top-4 flex items-center gap-2.5 rounded-full bg-bg-primary px-2.5 py-px text-body-sm leading-5.25 text-text-secondary">
+                <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+                <span>Same‑Day</span>
+              </p>
+            </div>
+            <div class="flex flex-col items-start lg:pt-6">
+              <p class="font-heading text-h4 font-semibold leading-8">From <bdi dir="ltr">$45</bdi></p>
+              <p class="mt-2 text-body-lg leading-6 md:mt-4">Soldering, dock connector repair, flex cable replacement. Restore fast charge.</p>
+              <a href="service-details.html" class="btn-primary mt-4 md:mt-8">
+                <span>Learn More</span>
+                <span><i class="ri-arrow-right-s-line icon-directional text-base"></i></span>
+              </a>
+            </div>
+          </li>
+          <li class="service-stack-card grid gap-4 md:gap-6 rounded-[10px] lg:rounded-xl bg-card-rose px-4 py-6 sm:px-6 md:grid-cols-2 lg:grid-cols-[400fr_424fr_400fr] xl:rounded-[20px] [--i:4]">
+            <div class="flex items-center gap-4 md:col-span-2 lg:col-span-1 lg:flex-col lg:items-start">
+              <span class="block size-16.25 shrink-0 rounded-full bg-bg-primary p-4 md:size-25 md:p-6.25"><img src="assets/img/icons/mobile-service-camera.svg" alt="Camera and audio repair icon" class="size-full"></span>
+              <h3 class="font-heading text-h4 font-semibold leading-8">Camera & Audio</h3>
+            </div>
+            <div class="relative">
+              <img src="assets/img/mobile-service-camera.webp" alt="Gloved hands holding an opened phone with its camera module exposed" loading="lazy" class="aspect-424/250 w-full rounded-[10px] lg:rounded-xl object-cover xl:rounded-[20px]">
+              <p class="absolute inset-s-4 top-4 flex items-center gap-2.5 rounded-full bg-bg-primary px-2.5 py-px text-body-sm leading-5.25 text-text-secondary">
+                <span class="text-base leading-none text-primary"><i class="ri-check-double-line"></i></span>
+                <span>Tested</span>
+              </p>
+            </div>
+            <div class="flex flex-col items-start lg:pt-6">
+              <p class="font-heading text-h4 font-semibold leading-8">From <bdi dir="ltr">$55</bdi></p>
+              <p class="mt-2 text-body-lg leading-6 md:mt-4">Blurry photos, microphone failure, earpiece speaker cleaning. Audio restored.</p>
+              <a href="service-details.html" class="btn-primary mt-4 md:mt-8">
+                <span>Learn More</span>
+                <span><i class="ri-arrow-right-s-line icon-directional text-base"></i></span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="services.html" class="btn-outline mt-8 self-center [--btn-outline-color:var(--color-text-primary)]">
+        <span>View All Services</span>
+        <span><i class="ri-arrow-right-s-line icon-directional text-base"></i></span>
+      </a>
+    </div>
+  </section>
+  <!-- End Service Section -->
+  <!-- Start Why Choose Us Section -->
+  <section class="relative bg-bg-card" aria-labelledby="why-fixumi-title">
+    <div class="relative aspect-4/3 md:aspect-video lg:absolute lg:inset-y-0 lg:inset-s-0 lg:aspect-auto lg:w-[43.54%]">
+      <img src="assets/img/why-fixumi-repair.webp" alt="Technician replacing parts on an opened smartphone" class="size-full object-cover object-[center_30%]">
+      <button type="button" class="absolute bottom-4 inset-e-4 grid size-16 place-items-center rounded-full bg-white text-primary transition-transform duration-300 hover:scale-110 xl:bottom-16 xl:inset-e-16 xl:size-25" data-video-open aria-haspopup="dialog" aria-controls="video-modal" aria-label="Play the Fixumi intro video">
+        <span class="text-xl leading-none xl:text-2xl"><i class="ri-play-fill"></i></span>
+      </button>
+    </div>
+    <div class="container pt-8 pb-12.5 sm:pb-16 lg:pt-16 xl:py-25">
+      <div class="lg:ms-[calc(45%+12px)] xl:ms-[calc(50%+12px)]">
+        <p class="flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-caption leading-3.75 text-primary">
+          <span class="size-1.5 rounded-full bg-primary"></span>
+          <span>Why Choose Fixumi?</span>
+        </p>
+        <h2 data-aos="fade-up" id="why-fixumi-title" class="mt-2 font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11">Built Like a Croc, Fixed Like a Pro</h2>
+        <ul data-aos="fade-up" data-aos-delay="150" class="benefit-grid mt-6 lg:mt-8 grid gap-4 sm:auto-rows-fr lg:gap-6 sm:grid-cols-2">
+          <li class="benefit-card rounded-[10px] lg:rounded-xl px-4 py-6 [--glow:var(--color-secondary)] xl:rounded-[20px] xl:px-6">
+            <img src="assets/img/icons/why-fixumi-warranty.svg" alt="Warranty icon" class="size-16.25 md:size-18.75 xl:size-25">
+            <h3 class="mt-6.5 font-heading text-h4 font-semibold leading-8"><bdi dir="ltr">90-Day Warranty</bdi></h3>
+            <p class="mt-2 text-body leading-6.5 text-text-secondary">All repairs are backed by our comprehensive 90-Day Warranty for your complete peace of mind.</p>
+          </li>
+          <li class="benefit-card rounded-[10px] lg:rounded-xl px-4 py-6 [--glow:var(--color-primary)] xl:rounded-[20px] xl:px-6">
+            <img src="assets/img/icons/why-fixumi-technicians.svg" alt="Certified technicians icon" class="size-16.25 md:size-18.75 xl:size-25">
+            <h3 class="mt-6.5 font-heading text-h4 font-semibold leading-8">Certified Technicians</h3>
+            <p class="mt-2 text-body leading-6.5 text-text-secondary">Our repairs are performed by certified and experienced technicians using the latest tools & techniques.</p>
+          </li>
+          <li class="benefit-card rounded-[10px] lg:rounded-xl px-4 py-6 [--glow:var(--color-success)] xl:rounded-[20px] xl:px-6">
+            <img src="assets/img/icons/why-fixumi-same-day.svg" alt="Same-day service icon" class="size-16.25 md:size-18.75 xl:size-25">
+            <h3 class="mt-6.5 font-heading text-h4 font-semibold leading-8">Same Day Service</h3>
+            <p class="mt-2 text-body leading-6.5 text-text-secondary">Get your phone repaired the same day with our fast and efficient service.</p>
+          </li>
+          <li class="benefit-card rounded-[10px] lg:rounded-xl px-4 py-6 [--glow:var(--color-alert)] xl:rounded-[20px] xl:px-6">
+            <img src="assets/img/icons/why-fixumi-genuine-parts.svg" alt="Genuine parts icon" class="size-16.25 md:size-18.75 xl:size-25">
+            <h3 class="mt-6.5 font-heading text-h4 font-semibold leading-8">Genuine Parts</h3>
+            <p class="mt-2 text-body leading-6.5 text-text-secondary">We use only genuine OEM parts to ensure optimal performance and longevity of your device.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- End Why Choose Us Section -->
+  <!-- Start Partners Section -->
+  <section class="mt-4.5" aria-labelledby="trusted-by-title">
+    <h2 id="trusted-by-title" class="sr-only">Trusted by</h2>
+    <div class="brand-ticker swiper mx-auto w-full max-w-full-width" data-marquee="1" data-speed="4000" data-gap="10" data-touch="1">
+      <ul class="swiper-wrapper">
+        <li class="brand-slide swiper-slide">
+          <img src="assets/img/brand-fast-repair.svg" alt="FastRepair">
+        </li>
+        <li class="brand-slide swiper-slide">
+          <img src="assets/img/brand-home-repair.svg" alt="Home Repair">
+        </li>
+        <li class="brand-slide swiper-slide">
+          <img src="assets/img/brand-fix-repair.svg" alt="Fix Repair">
+        </li>
+        <li class="brand-slide swiper-slide">
+          <img src="assets/img/brand-best-repair.svg" alt="Best Repair">
+        </li>
+        <li class="brand-slide swiper-slide">
+          <img src="assets/img/brand-one-stop.svg" alt="One Stop"></li>
+        <li class="brand-slide swiper-slide">
+          <img src="assets/img/brand-house-repair.svg" alt="HouseRepair">
+        </li>
+        <li class="brand-slide swiper-slide">
+          <img src="assets/img/brand-fix-repair.svg" alt="Fix Repair">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Partners Section -->
+  <!-- Start How It Works Section -->
+  <section class="py-12.5 sm:py-16 xl:pt-25 xl:pb-20" aria-labelledby="how-fixumi-title">
+    <div class="container">
+      <p class="mx-auto flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-caption leading-3.75 text-primary">
+        <span class="size-1.5 rounded-full bg-primary"></span>
+        <span>How Fixumi Works</span>
+      </p>
+      <h2 data-aos="fade-up" id="how-fixumi-title" class="mt-2 text-center font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11">From Drop-Off To Crystal-Clear Screen —<br class="hidden lg:inline"> Four Swift Steps, Zero Hassle.</h2>
+      <ol data-aos="fade-up" data-aos-delay="150" class="mt-8 grid gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6">
+        <li>
+          <p class="flex items-center gap-4 text-text-secondary">
+            <span>
+              <img src="assets/img/icons/how-fixumi-book.svg" alt="Calendar booking icon" class="block size-12.5">
+            </span>
+            <span>Step 01</span>
+          </p>
+          <h3 class="mt-4 font-heading text-h4 font-semibold leading-8">Book & Drop</h3>
+          <p class="mt-2 leading-6.5 text-text-secondary">Schedule online or walk in. We back up your data right in front of you.</p>
+        </li>
+        <li>
+          <p class="flex items-center gap-4 text-text-secondary">
+            <span>
+              <img src="assets/img/icons/how-fixumi-diagnose.svg" alt="Microscope diagnosis icon" class="block size-12.5">
+            </span>
+            <span>Step 02</span>
+          </p>
+          <h3 class="mt-4 font-heading text-h4 font-semibold leading-8">Diagnose & Quote</h3>
+          <p class="mt-2 leading-6.5 text-text-secondary">Free no‑obligation inspection. We use micro‑soldering tools for precision.</p>
+        </li>
+        <li>
+          <p class="flex items-center gap-4 text-text-secondary">
+            <span><img src="assets/img/icons/how-fixumi-fix.svg" alt="Fix and test icon" class="block size-12.5"></span>
+            <span>Step 03</span>
+          </p>
+          <h3 class="mt-4 font-heading text-h4 font-semibold leading-8">Fix & Test</h3>
+          <p class="mt-2 leading-6.5 text-text-secondary">OEM‑grade parts, ultrasonic cleaning, and full function validation.</p>
+        </li>
+        <li>
+          <p class="flex items-center gap-4 text-text-secondary">
+            <span>
+              <img src="assets/img/icons/how-fixumi-pay.svg" alt="Hand holding a coin icon" class="block size-12.5">
+            </span>
+            <span>Step 04</span>
+          </p>
+          <h3 class="mt-4 font-heading text-h4 font-semibold leading-8">Pay & Unlock</h3>
+          <p class="mt-2 leading-6.5 text-text-secondary">Get your device with a free Fixumi microfiber cloth & warranty card.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <!-- End How It Works Section -->
+  <!-- Start Testimonial Section -->
+  <section aria-labelledby="testimonial-title">
+    <div class="relative isolate mx-auto max-w-full-width py-12.5 sm:py-16 xl:py-25">
+      <div class="testimonial-backdrop" aria-hidden="true"></div>
+      <div class="container text-white">
+        <div class="max-w-203 flex flex-col mx-auto">
+          <p class="mx-auto flex w-fit items-center gap-2 rounded-full border border-white/30 bg-white/5 px-4 py-1.5 text-caption leading-3.75">
+            <span class="size-1.5 rounded-full bg-white"></span>
+            <span>Happy Customers</span>
+          </p>
+          <h2 data-aos="fade-up" id="testimonial-title" class="mt-2 text-center font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11">Real Stories From Real People Who Trust Fixumi With Their Devices and Appliances.</h2>
+        </div>
+      </div>
+      <div class="swiper testimonial-track mt-8 w-full" data-variable-width="1" data-center="1" data-loop="1" data-gap="16" data-md-gap="24" data-speed="300" data-pagination-type="bullets">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="flex h-full flex-col w-[calc(100vw-64px)] max-w-120 lg:max-w-162 rounded-[10px] lg:rounded-[20px] bg-bg-card px-3 py-6 text-text-primary xsm:px-6 md:p-8">
+              <div class="rating [--rating-leading:1]" data-rating="5" role="img" aria-label="Rated 5 out of 5"><div class="rating-percentage"></div></div>
+              <blockquote class="mt-4 font-heading text-lg font-semibold leading-7 sm:text-h4 sm:leading-8">“Dropped my phone in the pool – Fixumi recovered EVERYTHING. Even the water damage indicator looks new.”</blockquote>
+              <figcaption class="mt-auto flex items-center gap-3 xsm:gap-4.25 pt-8">
+                <img src="assets/img/testimonial-v3-1.webp" alt="Jeff Brandon" class="size-15 shrink-0 md:size-18.75 -scale-x-100 rounded-full">
+                <div class="min-w-0">
+                  <p class="truncate font-heading text-h5 font-semibold leading-7">Jeff Brandon</p>
+                  <p class="text-body leading-6.5 text-text-secondary">iPhone 15 Pro</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex h-full flex-col w-[calc(100vw-64px)] max-w-120 lg:max-w-162 rounded-[10px] lg:rounded-[20px] bg-bg-card px-3 py-6 text-text-primary xsm:px-6 md:p-8">
+              <div class="rating [--rating-leading:1]" data-rating="5" role="img" aria-label="Rated 5 out of 5"><div class="rating-percentage"></div></div>
+              <blockquote class="mt-4 font-heading text-lg font-semibold leading-7 sm:text-h4 sm:leading-8">“45 minutes and my screen is flawless. They even recalibrated the fingerprint sensor. Better than new!”</blockquote>
+              <figcaption class="mt-auto flex items-center gap-3 xsm:gap-4.25 pt-8">
+                <img src="assets/img/testimonial-v3-2.webp" alt="Christopher Berman" class="size-15 shrink-0 md:size-18.75 rounded-full">
+                <div class="min-w-0">
+                  <p class="truncate font-heading text-h5 font-semibold leading-7">Christopher Berman</p>
+                  <p class="text-body leading-6.5 text-text-secondary">Samsung S24 Ultra</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex h-full flex-col w-[calc(100vw-64px)] max-w-120 lg:max-w-162 rounded-[10px] lg:rounded-[20px] bg-bg-card px-3 py-6 text-text-primary xsm:px-6 md:p-8">
+              <div class="rating [--rating-leading:1]" data-rating="5" role="img" aria-label="Rated 5 out of 5"><div class="rating-percentage"></div></div>
+              <blockquote class="mt-4 font-heading text-lg font-semibold leading-7 sm:text-h4 sm:leading-8">“Battery swelled and lifted the back glass. Fixumi did a full housing swap in 1 hour. Amazing warranty too.”</blockquote>
+              <figcaption class="mt-auto flex items-center gap-3 xsm:gap-4.25 pt-8">
+                <img src="assets/img/testimonial-v3-3.webp" alt="Charles Segovia" class="size-15 shrink-0 md:size-18.75 rounded-full">
+                <div class="min-w-0">
+                  <p class="truncate font-heading text-h5 font-semibold leading-7">Charles Segovia</p>
+                  <p class="text-body leading-6.5 text-text-secondary">Pixel 8 Pro</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex h-full flex-col w-[calc(100vw-64px)] max-w-120 lg:max-w-162 rounded-[10px] lg:rounded-[20px] bg-bg-card px-3 py-6 text-text-primary xsm:px-6 md:p-8">
+              <div class="rating [--rating-leading:1]" data-rating="5" role="img" aria-label="Rated 5 out of 5"><div class="rating-percentage"></div></div>
+              <blockquote class="mt-4 font-heading text-lg font-semibold leading-7 sm:text-h4 sm:leading-8">“Cracked camera lens and a dead charging port, both fixed while I had lunch next door. Photos are sharp again.”</blockquote>
+              <figcaption class="mt-auto flex items-center gap-3 xsm:gap-4.25 pt-8">
+                <img src="assets/img/testimonial-1.webp" alt="Andrew Valenzuela" class="size-15 shrink-0 md:size-18.75 rounded-full">
+                <div class="min-w-0">
+                  <p class="truncate font-heading text-h5 font-semibold leading-7">Andrew Valenzuela</p>
+                  <p class="text-body leading-6.5 text-text-secondary">OnePlus 12</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex h-full flex-col w-[calc(100vw-64px)] max-w-120 lg:max-w-162 rounded-[10px] lg:rounded-[20px] bg-bg-card px-3 py-6 text-text-primary xsm:px-6 md:p-8">
+              <div class="rating [--rating-leading:1]" data-rating="5" role="img" aria-label="Rated 5 out of 5"><div class="rating-percentage"></div></div>
+              <blockquote class="mt-4 font-heading text-lg font-semibold leading-7 sm:text-h4 sm:leading-8">“My tablet would not hold a charge past noon. New battery, fair price, and they explained every step of the repair.”</blockquote>
+              <figcaption class="mt-auto flex items-center gap-3 xsm:gap-4.25 pt-8">
+                <img src="assets/img/avatar-1.webp" alt="Megan Hollis" class="size-15 shrink-0 md:size-18.75 rounded-full">
+                <div class="min-w-0">
+                  <p class="truncate font-heading text-h5 font-semibold leading-7">Megan Hollis</p>
+                  <p class="text-body leading-6.5 text-text-secondary">iPad Air</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex h-full flex-col w-[calc(100vw-64px)] max-w-120 lg:max-w-162 rounded-[10px] lg:rounded-[20px] bg-bg-card px-3 py-6 text-text-primary xsm:px-6 md:p-8">
+              <div class="rating [--rating-leading:1]" data-rating="5" role="img" aria-label="Rated 5 out of 5"><div class="rating-percentage"></div></div>
+              <blockquote class="mt-4 font-heading text-lg font-semibold leading-7 sm:text-h4 sm:leading-8">“Speaker crackled on every call. Diagnosed in ten minutes, fixed the same afternoon, and my data never left the store.”</blockquote>
+              <figcaption class="mt-auto flex items-center gap-3 xsm:gap-4.25 pt-8">
+                <img src="assets/img/avatar-2.webp" alt="Daniel Ortiz" class="size-15 shrink-0 md:size-18.75 rounded-full">
+                <div class="min-w-0">
+                  <p class="truncate font-heading text-h5 font-semibold leading-7">Daniel Ortiz</p>
+                  <p class="text-body leading-6.5 text-text-secondary">Galaxy Z Flip5</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots slider-dots-inverse mt-8"></div>
+    </div>
+  </section>
+  <!-- End Testimonial Section -->
+  <!-- Start Technician Section -->
+  <section class="pt-12.5 sm:pt-16 xl:pt-25" aria-labelledby="technician-title">
+    <div class="container xl:grid xl:grid-cols-4 xl:gap-6">
+      <div class="flex flex-col gap-6 sm:items-start lg:flex-row lg:items-end lg:justify-between xl:col-start-1 xl:col-end-5 xl:row-start-1 xl:self-start">
+        <div>
+          <h2 data-aos="fade-up" id="technician-title" class="font-heading text-[30px] font-bold leading-[1.23] sm:text-[40px] sm:leading-12.25 md:text-[44px] md:leading-13.5">Top-Rated Technicians</h2>
+          <p class="mt-2 max-w-134 text-body-lg leading-6 text-text-secondary">Experts with verified skills and happy customers</p>
+        </div>
+        <a href="technician.html" class="btn-primary">
+          <span>View All Technicians</span>
+          <span><i class="ri-arrow-right-line icon-directional text-base"></i></span>
+        </a>
+      </div>
+      <ul class="technician-row mt-8 grid gap-4 xsm:grid-cols-2 lg:grid-cols-4 xl:gap-6 xl:pointer-events-none xl:col-span-full xl:row-start-1" data-technician-row>
+        <li class="technician-card technician-step aspect-312/400 rounded-[10px] lg:rounded-[20px] [--step:300px] [--beat-start:0.35] [--beat-end:0.75]">
+          <img src="assets/img/technician-card-5.webp" alt="Technician in a blue hard hat and overalls, arms crossed" class="size-full object-cover">
+          <div class="technician-overlay">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xl:text-h4 xl:leading-8">
+              <a href="technician-details.html" class="technician-name stretched-link"><span>William Sullivan</span></a>
+            </h3>
+            <p class="mt-2 flex flex-wrap items-center justify-center gap-4 text-body-sm leading-5.25">
+              <span class="rounded-full bg-bg-primary px-2.5 py-px text-text-primary">Lead Micro-solder</span>
+              <span class="flex items-center gap-2">
+                <span class="text-base leading-none text-secondary"><i class="ri-star-fill"></i></span>
+                <bdi dir="ltr">4.9</bdi>
+              </span>
+            </p>
+            <p class="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-body-sm leading-5.25 xl:gap-x-7">
+              <span class="flex items-center gap-2.5">
+                <span class="text-base leading-none"><i class="ri-tools-fill"></i></span>
+                <bdi dir="ltr">1.2k Repairs</bdi>
+              </span>
+              <span class="flex items-center gap-2.5">
+                <span class="text-base leading-none"><i class="ri-time-line"></i></span>
+                <bdi dir="ltr">7 Years</bdi>
+              </span>
+            </p>
+            <a href="book-schedule.html" class="technician-book btn-primary mt-4 px-3.25 py-1.75">
+              <span>Book A Repair</span>
+              <span><i class="ri-calendar-line text-base"></i></span>
+            </a>
+          </div>
+        </li>
+        <li class="technician-card technician-step aspect-312/400 rounded-[10px] lg:rounded-[20px] [--step:200px] [--beat-start:0.35] [--beat-end:0.75]">
+          <img src="assets/img/technician-card-6.webp" alt="Technician in a blue cap and coveralls, arms crossed" class="size-full object-cover">
+          <div class="technician-overlay">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xl:text-h4 xl:leading-8">
+              <a href="technician-details.html" class="technician-name stretched-link"><span>Kenny Donegan</span></a>
+            </h3>
+            <p class="mt-2 flex flex-wrap items-center justify-center gap-4 text-body-sm leading-5.25">
+              <span class="rounded-full bg-bg-primary px-2.5 py-px text-text-primary">Battery & Power</span>
+              <span class="flex items-center gap-2">
+                <span class="text-base leading-none text-secondary"><i class="ri-star-fill"></i></span>
+                <bdi dir="ltr">4.9</bdi>
+              </span>
+            </p>
+            <p class="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-body-sm leading-5.25 xl:gap-x-7">
+              <span class="flex items-center gap-2.5">
+                <span class="text-base leading-none"><i class="ri-tools-fill"></i></span>
+                <bdi dir="ltr">950 Repairs</bdi>
+              </span>
+              <span class="flex items-center gap-2.5">
+                <span class="text-base leading-none"><i class="ri-time-line"></i></span>
+                <bdi dir="ltr">5 Years</bdi>
+              </span>
+            </p>
+            <a href="book-schedule.html" class="technician-book btn-primary mt-4 px-3.25 py-1.75">
+              <span>Book A Repair</span>
+              <span><i class="ri-calendar-line text-base"></i></span>
+            </a>
+          </div>
+        </li>
+        <li class="technician-card technician-step aspect-312/400 rounded-[10px] lg:rounded-[20px] [--step:100px]">
+          <img src="assets/img/technician-card-7.webp" alt="Bearded technician in a blue cap with a hammer and wrench in his pocket" class="size-full object-cover">
+          <div class="technician-overlay">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xl:text-h4 xl:leading-8">
+              <a href="technician-details.html" class="technician-name stretched-link"><span>Victor Wilson</span></a>
+            </h3>
+            <p class="mt-2 flex flex-wrap items-center justify-center gap-4 text-body-sm leading-5.25">
+              <span class="rounded-full bg-bg-primary px-2.5 py-px text-text-primary">Water Damage Pro</span>
+              <span class="flex items-center gap-2">
+                <span class="text-base leading-none text-secondary"><i class="ri-star-fill"></i></span>
+                <bdi dir="ltr">5.0</bdi>
+              </span>
+            </p>
+            <p class="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-body-sm leading-5.25 xl:gap-x-7">
+              <span class="flex items-center gap-2.5">
+                <span class="text-base leading-none"><i class="ri-tools-fill"></i></span>
+                <bdi dir="ltr">780 Repairs</bdi>
+              </span>
+              <span class="flex items-center gap-2.5">
+                <span class="text-base leading-none"><i class="ri-time-line"></i></span>
+                <bdi dir="ltr">6 Years</bdi>
+              </span>
+            </p>
+            <a href="book-schedule.html" class="technician-book btn-primary mt-4 px-3.25 py-1.75">
+              <span>Book A Repair</span>
+              <span><i class="ri-calendar-line text-base"></i></span>
+            </a>
+          </div>
+        </li>
+        <li class="technician-card technician-step aspect-312/400 rounded-[10px] lg:rounded-[20px] [--beat-start:0] [--beat-end:0.4]">
+          <img src="assets/img/technician-card-8.webp" alt="Technician in a navy uniform holding an adjustable wrench" class="size-full object-cover">
+          <div class="technician-overlay">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xl:text-h4 xl:leading-8">
+              <a href="technician-details.html" class="technician-name stretched-link"><span>Adrian Vanpelt</span></a>
+            </h3>
+            <p class="mt-2 flex flex-wrap items-center justify-center gap-4 text-body-sm leading-5.25">
+              <span class="rounded-full bg-bg-primary px-2.5 py-px text-text-primary">Camera & Optics</span>
+              <span class="flex items-center gap-2">
+                <span class="text-base leading-none text-secondary"><i class="ri-star-fill"></i></span>
+                <bdi dir="ltr">5.0</bdi>
+              </span>
+            </p>
+            <p class="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-body-sm leading-5.25 xl:gap-x-7">
+              <span class="flex items-center gap-2.5">
+                <span class="text-base leading-none"><i class="ri-tools-fill"></i></span>
+                <bdi dir="ltr">650 Repairs</bdi>
+              </span>
+              <span class="flex items-center gap-2.5">
+                <span class="text-base leading-none"><i class="ri-time-line"></i></span>
+                <bdi dir="ltr">6 Years</bdi>
+              </span>
+            </p>
+            <a href="book-schedule.html" class="technician-book btn-primary mt-4 px-3.25 py-1.75">
+              <span>Book A Repair</span>
+              <span><i class="ri-calendar-line text-base"></i></span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Technician Section -->
+  <!-- Start Schedule Booking Section -->
+  <section class="py-12.5 sm:py-16 xl:py-25" aria-labelledby="book-repair-title">
+    <div class="container grid gap-8 lg:grid-cols-[536fr_760fr] lg:gap-x-6">
+      <div class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-x-6 lg:flex">
+        <p class="flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-caption leading-3.75 text-primary sm:col-span-2">
+          <span class="size-1.5 rounded-full bg-primary"></span>
+          <span>Express Booking</span>
+        </p>
+        <h2 data-aos="fade-up" id="book-repair-title" class="mt-2 sm:col-span-2 font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11">Book Your Repair in 3 Taps</h2>
+        <p class="mt-2 text-body-lg leading-6 text-text-secondary sm:col-span-2">Same-day service · free diagnostic</p>
+        <ul class="mt-7.5 flex flex-col gap-6 sm:self-center lg:gap-8">
+          <li class="flex gap-4">
+            <span class="mt-0.5 grid size-12.5 shrink-0 place-items-center rounded-full bg-secondary text-text-primary"><i class="ri-shield-fill text-2xl"></i></span>
+            <div>
+              <h3 class="font-heading text-h5 font-semibold leading-7"><bdi dir="ltr">6‑Month Warranty</bdi></h3>
+              <p class="text-body leading-6.5 text-text-secondary">Parts & labour covered</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="mt-0.5 grid size-12.5 shrink-0 place-items-center rounded-full bg-secondary text-text-primary"><i class="ri-flashlight-fill text-2xl"></i></span>
+            <div>
+              <h3 class="font-heading text-h5 font-semibold leading-7"><bdi dir="ltr">60‑Min Express</bdi></h3>
+              <p class="text-body leading-6.5 text-text-secondary">Most repairs while you wait</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="mt-0.5 grid size-12.5 shrink-0 place-items-center rounded-full bg-secondary text-text-primary"><i class="ri-mail-fill text-2xl"></i></span>
+            <div>
+              <h3 class="font-heading text-h5 font-semibold leading-7">Walk‑In or Mail‑In</h3>
+              <p class="text-body leading-6.5 text-text-secondary">We send you a kit</p>
+            </div>
+          </li>
+        </ul>
+        <div class="relative mt-12 w-full max-w-106 sm:mt-7.5 sm:self-end lg:mt-auto">
+          <span class="absolute inset-x-0 bottom-0 h-[54.9%] rounded-[10px] lg:rounded-[20px] bg-bg-card"></span>
+          <img src="assets/img/book-repair-technician.webp" alt="Technician holding up a repaired smartphone at a workbench" class="relative w-full rounded-b-[10px] lg:rounded-b-[20px]">
+          <svg class="absolute inset-x-0 top-[-6.1%] mx-auto w-[23.04%] overflow-visible" viewBox="0 0 97.5 97.5">
+            <path id="book-repair-arc" d="M1 48.75a47.75 47.75 0 1 1 95.5 0" fill="none"/>
+            <text class="fill-text-primary text-[13px]" direction="ltr">
+              <textPath href="#book-repair-arc" startOffset="50%" text-anchor="middle" textLength="92" lengthAdjust="spacing">2.4k+ Repairs</textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+      <div class="rounded-[10px] lg:rounded-xl bg-bg-card px-4 py-6 md:py-8 xl:px-8 xl:rounded-[20px] xl:pb-6">
+        <h3 class="font-heading text-[30px] font-bold leading-[1.23] sm:text-[40px] sm:leading-12.25 md:text-[44px] md:leading-13.5">Schedule Your Fix</h3>
+        <p class="mt-1 text-body-lg leading-6 text-text-secondary">Fill in the details and we'll confirm your slot within minutes.</p>
+        <form class="mt-6" data-success="Your repair is booked! We will confirm by email shortly.">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="br-name" class="block text-body leading-6.5">Full Name</label>
+              <input id="br-name" name="name" type="text" autocomplete="name" placeholder="Michael Atkinson" class="form-field mt-1">
+            </div>
+            <div>
+              <label for="br-email" class="block text-body leading-6.5">Email Address</label>
+              <input id="br-email" name="email" type="email" autocomplete="email" placeholder="michael@Fixumi.com" class="form-field mt-1">
+            </div>
+            <div>
+              <label for="br-phone" class="block text-body leading-6.5">Phone Number</label>
+              <input id="br-phone" name="phone" type="tel" dir="ltr" autocomplete="tel" placeholder="+1 (555) 000-9999" class="form-field mt-1">
+            </div>
+            <div>
+              <label for="br-date" class="block text-body leading-6.5">Preferred Date</label>
+              <div class="relative mt-1" dir="ltr">
+                <input id="br-date" name="date" type="text" autocomplete="off" placeholder="dd/mm/yyyy" class="form-field" data-picker="date">
+                <span class="field-icon"><i class="ri-calendar-line"></i></span>
+              </div>
+            </div>
+            <div>
+              <label for="br-device" class="block text-body leading-6.5">Device Brand</label>
+              <div class="relative mt-1">
+                <select id="br-device" name="device" class="form-field" data-select>
+                  <option value="" selected disabled>Select Device</option>
+                  <option>Apple</option>
+                  <option>Samsung</option>
+                  <option>Google Pixel</option>
+                  <option>OnePlus</option>
+                  <option>Xiaomi</option>
+                  <option>Motorola</option>
+                  <option>Other</option>
+                </select>
+                <span class="field-icon"><i class="ri-arrow-down-s-line"></i></span>
+              </div>
+            </div>
+            <div>
+              <label for="br-issue" class="block text-body leading-6.5">Repair Type</label>
+              <div class="relative mt-1">
+                <select id="br-issue" name="issue" class="form-field" data-select>
+                  <option value="" selected disabled>Choose Issue</option>
+                  <option>Screen Replacement</option>
+                  <option>Battery Replacement</option>
+                  <option>Water Damage</option>
+                  <option>Charging Port</option>
+                  <option>Camera Repair</option>
+                  <option>Other</option>
+                </select>
+                <span class="field-icon"><i class="ri-arrow-down-s-line"></i></span>
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="br-notes" class="block text-body leading-6.5">Notes (optional)</label>
+              <textarea id="br-notes" name="notes" placeholder="e.g. phone won't turn on, water damage..." class="form-field mt-1"></textarea>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
+            <button type="submit" class="btn-primary w-full xsm:w-fit">
+              <span>Book Now</span>
+              <span><i class="ri-calendar-line text-base"></i></span>
+            </button>
+            <p class="flex flex-col gap-1 text-body leading-6.5 text-text-secondary sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-5">
+              <span><bdi dir="ltr">6-Month Warranty</bdi></span>
+              <span class="hidden text-text-muted sm:block" aria-hidden="true">|</span>
+              <span>Free Diagnosis</span>
+              <span class="hidden text-text-muted sm:block" aria-hidden="true">|</span>
+              <span>Secure Payment</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End Schedule Booking Section -->
+  <!-- Start FAQ Section -->
+  <section class="bg-bg-card py-12.5 sm:py-16 xl:py-25" aria-labelledby="faq-title">
+    <div class="container grid gap-8 lg:grid-cols-[506fr_760fr] lg:gap-x-13.5">
+      <div class="lg:sticky lg:top-31 lg:self-start">
+        <p class="flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-caption leading-3.75 text-primary">
+          <span class="size-1.5 rounded-full bg-primary"></span>
+          <span>FAQ</span>
+        </p>
+        <h2 data-aos="fade-up" id="faq-title" class="mt-2 font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11">Find Quick Answers To Common Questions About Our Repair Services</h2>
+      </div>
+      <ol class="faq-list flex flex-col gap-4">
+        <li class="faq-item rounded-[10px] lg:rounded-xl xl:rounded-[20px]" data-open>
+          <h3 class="font-heading text-lg font-semibold leading-7 sm:text-h5 sm:leading-7">
+            <button type="button" class="faq-trigger" id="faq-q1" aria-expanded="true" aria-controls="faq-a1">
+              <span>Does Fixumi erase my data during repair?</span>
+              <span><i class="ri-arrow-down-s-line text-base"></i></span>
+            </button>
+          </h3>
+          <div class="faq-panel" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <p class="pb-4 text-body leading-6.5 text-text-secondary md:pe-18.5 lg:pb-6"><span class="text-body-lg leading-6 text-text-primary">Ans.</span> Never. We work strictly on hardware. We offer a free on&#8209;site data backup before any repair, and we never factory reset unless you request it.</p>
+          </div>
+        </li>
+        <li class="faq-item rounded-[10px] lg:rounded-xl xl:rounded-[20px]">
+          <h3 class="font-heading text-lg font-semibold leading-7 sm:text-h5 sm:leading-7">
+            <button type="button" class="faq-trigger" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+              <span>How long does a typical repair take?</span>
+              <span><i class="ri-arrow-down-s-line text-base"></i></span>
+            </button>
+          </h3>
+          <div class="faq-panel" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <p class="pb-4 text-body leading-6.5 text-text-secondary md:pe-18.5 lg:pb-6"><span class="text-body-lg leading-6 text-text-primary">Ans.</span> Most screen and battery repairs are done in under an hour while you wait. Board&#8209;level and water&#8209;damage repairs usually take one to three working days.</p>
+          </div>
+        </li>
+        <li class="faq-item rounded-[10px] lg:rounded-xl xl:rounded-[20px]">
+          <h3 class="font-heading text-lg font-semibold leading-7 sm:text-h5 sm:leading-7">
+            <button type="button" class="faq-trigger" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+              <span>What warranty do you offer?</span>
+              <span><i class="ri-arrow-down-s-line text-base"></i></span>
+            </button>
+          </h3>
+          <div class="faq-panel" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <p class="pb-4 text-body leading-6.5 text-text-secondary md:pe-18.5 lg:pb-6"><span class="text-body-lg leading-6 text-text-primary">Ans.</span> Every repair is covered by our <bdi dir="ltr">12&#8209;month</bdi> warranty on parts and labour. If the same fault comes back, we fix it again at no cost.</p>
+          </div>
+        </li>
+        <li class="faq-item rounded-[10px] lg:rounded-xl xl:rounded-[20px]">
+          <h3 class="font-heading text-lg font-semibold leading-7 sm:text-h5 sm:leading-7">
+            <button type="button" class="faq-trigger" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
+              <span>What if Fixumi can&#39;t fix my phone?</span>
+              <span><i class="ri-arrow-down-s-line text-base"></i></span>
+            </button>
+          </h3>
+          <div class="faq-panel" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <p class="pb-4 text-body leading-6.5 text-text-secondary md:pe-18.5 lg:pb-6"><span class="text-body-lg leading-6 text-text-primary">Ans.</span> Then you pay nothing. Diagnosis is free, and if we can&#39;t repair the device we hand it back exactly as it came in.</p>
+          </div>
+        </li>
+        <li class="faq-item rounded-[10px] lg:rounded-xl xl:rounded-[20px]">
+          <h3 class="font-heading text-lg font-semibold leading-7 sm:text-h5 sm:leading-7">
+            <button type="button" class="faq-trigger" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
+              <span>Do you offer mail&#8209;in repairs?</span>
+              <span><i class="ri-arrow-down-s-line text-base"></i></span>
+            </button>
+          </h3>
+          <div class="faq-panel" id="faq-a5" role="region" aria-labelledby="faq-q5">
+            <p class="pb-4 text-body leading-6.5 text-text-secondary md:pe-18.5 lg:pb-6"><span class="text-body-lg leading-6 text-text-primary">Ans.</span> Yes. Book online and we send you a prepaid, padded shipping kit. We repair the device and ship it back insured, usually within five working days.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <!-- End FAQ Section -->
+  <!-- Start Blog Section -->
+  <section class="py-12.5 sm:py-16 xl:py-25" aria-labelledby="blog-title">
+    <div class="container">
+      <p class="mx-auto flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-caption leading-3.75 text-primary">
+        <span class="size-1.5 rounded-full bg-primary"></span>
+        <span>Fixumi blog</span>
+      </p>
+      <h2 data-aos="fade-up" id="blog-title" class="mx-auto mt-2 max-w-218 text-center font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11">Expert Tips, Repair Guides, and Industry News To Keep Your Devices Running Smoothly.</h2>
+      <ul data-aos="fade-up" data-aos-delay="150" class="mt-8 grid gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-6">
+        <li class="group relative">
+          <div class="overflow-hidden rounded-[10px] lg:rounded-xl xl:rounded-[20px]">
+            <a href="blog-details.html" class="block" tabindex="-1" aria-hidden="true"><img src="assets/img/blog-v3-cover-1.webp" alt="Hands wiping foam off a wet phone screen" class="aspect-424/250 w-full object-cover transition-transform duration-300 group-hover:scale-105"></a>
+          </div>
+          <div class="mt-4 flex flex-wrap items-center gap-2.5">
+            <img src="assets/img/blog-v3-author-1.webp" alt="Robert Pauls" class="size-12.5 rounded-full">
+            <span class="text-body leading-6.5 text-text-secondary">By: Robert Pauls</span>
+            <span class="blog-date ms-auto xl:[--blog-date-position:static]">
+              <span class="text-base leading-none"><i class="ri-calendar-line"></i></span>
+              <time dir="ltr" datetime="2026-07-29">Jul 29, 2026</time>
+            </span>
+          </div>
+          <h3 class="mt-4 font-heading text-h5 font-semibold leading-7 lg:text-h4 lg:leading-8 transition-colors duration-300 group-hover:text-primary group-focus-within:text-primary">
+            <a href="blog-details.html" class="stretched-link">Water damage? Don&#39;t use rice – do this instead</a>
+          </h3>
+        </li>
+        <li class="group relative">
+          <div class="overflow-hidden rounded-[10px] lg:rounded-xl xl:rounded-[20px]">
+            <a href="blog-details.html" class="block" tabindex="-1" aria-hidden="true"><img src="assets/img/blog-v3-cover-2.webp" alt="Technician prying a battery out of an opened phone" class="aspect-424/250 w-full object-cover transition-transform duration-300 group-hover:scale-105"></a>
+          </div>
+          <div class="mt-4 flex flex-wrap items-center gap-2.5">
+            <img src="assets/img/blog-v3-author-2.webp" alt="Joseph Ison" class="size-12.5 rounded-full">
+            <span class="text-body leading-6.5 text-text-secondary">By: Joseph Ison</span>
+            <span class="blog-date ms-auto xl:[--blog-date-position:static]">
+              <span class="text-base leading-none"><i class="ri-calendar-line"></i></span>
+              <time dir="ltr" datetime="2026-07-28">Jul 28, 2026</time>
+            </span>
+          </div>
+          <h3 class="mt-4 font-heading text-h5 font-semibold leading-7 lg:text-h4 lg:leading-8 transition-colors duration-300 group-hover:text-primary group-focus-within:text-primary">
+            <a href="blog-details.html" class="stretched-link">Battery swelling: warning signs & safe removal</a>
+          </h3>
+        </li>
+        <li class="group relative sm:col-span-2 lg:col-span-1">
+          <div class="overflow-hidden rounded-[10px] lg:rounded-xl xl:rounded-[20px]">
+            <a href="blog-details.html" class="block" tabindex="-1" aria-hidden="true"><img src="assets/img/blog-v3-cover-3.webp" alt="Technician replacing a phone screen with a screwdriver" class="aspect-424/250 w-full object-cover transition-transform duration-300 group-hover:scale-105"></a>
+          </div>
+          <div class="mt-4 flex flex-wrap items-center gap-2.5">
+            <img src="assets/img/blog-v3-author-3.webp" alt="Leo Batts" class="size-12.5 rounded-full">
+            <span class="text-body leading-6.5 text-text-secondary">By: Leo Batts</span>
+            <span class="blog-date ms-auto xl:[--blog-date-position:static]">
+              <span class="text-base leading-none"><i class="ri-calendar-line"></i></span>
+              <time dir="ltr" datetime="2026-07-27">Jul 27, 2026</time>
+            </span>
+          </div>
+          <h3 class="mt-4 font-heading text-h5 font-semibold leading-7 lg:text-h4 lg:leading-8 transition-colors duration-300 group-hover:text-primary group-focus-within:text-primary">
+            <a href="blog-details.html" class="stretched-link">OLED vs LCD: which replacement is right for you?</a>
+          </h3>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Blog Section -->
+  <!-- Start Footer Section -->
+  <footer class="footer-glow bg-ink text-white">
+    <div class="container">
+      <div class="grid gap-10 pt-16 pb-10 md:grid-cols-2 md:gap-6 xl:pt-25 xl:pb-12.5">
+        <div>
+          <img src="assets/img/logo-light.svg" alt="Fixumi logo" class="block">
+          <p class="mt-4 max-w-106 text-body leading-6.5">One hub for all your repair needs. From smartphones to home appliances, we bring certified technicians and genuine parts right to your doorstep.</p>
+        </div>
+        <div>
+          <div class="flex gap-4">
+            <span class="mt-1.5 grid size-12.5 shrink-0 place-items-center rounded-base bg-secondary text-2xl text-text-primary"><i class="ri-notification-3-line"></i></span>
+            <div>
+              <h2 class="font-heading text-h4 font-semibold leading-8">Newsletter</h2>
+              <p class="mt-1 text-body leading-6.5">Subscribe for 10% off your first repair</p>
+            </div>
+          </div>
+          <form class="mt-4 grid gap-2.5 xsm:flex xsm:gap-0 xsm:rounded-base xsm:border xsm:border-transparent xsm:bg-white xsm:transition-colors xsm:duration-300 xsm:focus-within:border-primary" data-success="Thanks for subscribing! Check your inbox to confirm.">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input id="newsletter-email" type="email" name="email" autocomplete="email" required placeholder="Enter your email address" class="h-11.5 min-w-0 flex-1 rounded-base border border-transparent bg-white px-4 text-body text-text-primary transition-colors duration-300 focus:border-primary outline-none placeholder:text-text-secondary xsm:h-auto xsm:rounded-none xsm:border-0 xsm:bg-transparent">
+            <button type="submit" class="btn-primary">
+              <span>Subscribe</span>
+              <span><i class="ri-send-ins-line text-base"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr class="border-white/10">
+      <div class="grid gap-7.5 py-10 xsm:grid-cols-[1fr_calc(50%+60px)] md:gap-x-6 md:gap-y-6 md:grid-cols-[auto_minmax(200px,auto)_auto_minmax(200px,auto)] xl:py-12.5">
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Quick Links</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="about-us.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact-us.html" class="footer-link">Careers</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Our Services</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="service-details.html" class="footer-link">Computer Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Mobile Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Air Condition Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">TV Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Refrigerator Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Washing Machine Repair</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Socials</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="https://www.facebook.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://x.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.youtube.com/" class="footer-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Contact Us</h2>
+          <ul class="mt-6 flex flex-col gap-2 text-body leading-6.5 text-text-muted">
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-map-pin-line"></i></span>
+              <span><bdi dir="ltr">DEPZ, Savar, Dhaka-1349</bdi></span>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-phone-fill"></i></span>
+              <a href="tel:+14239524294" class="footer-link"><bdi dir="ltr">+1 423-952-4294</bdi></a>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-mail-line"></i></span>
+              <a href="https://html.sumons.com/cdn-cgi/l/email-protection#d9b1bcb5a999bfb0a1acb4b0f7bab6b4" class="footer-link"><span class="__cf_email__" data-cfemail="f199949d81b1979889849c98df929e9c">[email&#160;protected]</span></a>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-time-line"></i></span>
+              <span><bdi dir="ltr" class="whitespace-nowrap">Mon&ndash;Sat: 9:00am &ndash; 8:00pm</bdi><br>Sunday: Closed</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-white/10">
+      <div class="flex flex-col gap-2 py-6 text-body leading-6.5 text-text-muted md:flex-row md:items-center md:justify-between xl:py-7.5">
+        <p class="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <span>&copy; <bdi dir="ltr">2026</bdi> Fixumi. All rights reserved</span>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <span class="flex items-center gap-1">
+            <span>Made with</span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span>in sumons</span>
+          </span>
+        </p>
+        <p class="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <a href="terms-condition.html" class="footer-link">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+  <!-- Start Video Modal -->
+  <dialog class="video-modal" id="video-modal" data-video-modal aria-label="Fixumi intro video">
+    <button type="button" class="mb-3 ms-auto grid size-10 place-items-center rounded-full bg-white text-text-primary transition-colors duration-300 hover:bg-primary hover:text-white" data-video-close aria-label="Close video">
+      <span class="text-2xl leading-none"><i class="ri-close-line"></i></span>
+    </button>
+    <iframe class="aspect-video w-full rounded-[10px] lg:rounded-xl" data-src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1&amp;rel=0" title="Fixumi intro video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen"></iframe>
+  </dialog>
+  <!-- End Video Modal -->
+  <!-- Start Scroll Top -->
+  <button type="button" class="scroll-top" data-scroll-top aria-label="Back to top"><span><i class="ri-arrow-up-line text-xl"></i></span></button>
+  <!-- End Scroll Top -->
+  <!-- Plugin JS -->
+  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/tom-select.min.js"></script>
+  <script src="assets/js/flatpickr.min.js"></script>
+  <script src="assets/js/aos.min.js"></script>
+  <!-- Project JS -->
+  <script src="assets/js/main.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a531d3c98afa5cf7',t:'MTc5MzQ0MDk3OQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='../cdn-cgi/challenge-platform/h/g/scripts/jsd/c787ce48cf6b/main1f6d.js?ray=a531d3c98afa5cf7',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"6f756f02820545e3be40ddc6eb6154c3","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>

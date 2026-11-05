@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mobile phone repair website demo: same-day screen, battery, charging port and water damage repairs with warranty.">
+  <meta name="keywords" content="handyman, home repair, repair services, appliance repair, computer repair, mobile repair, ac repair, electrician, maintenance, service booking, admin dashboard, tailwind css template, html template">
+  <meta name="author" content="sumons">
+  <title>Mobile Repair | Fixumi </title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/img/favicon.webp">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch.webp">
+  <!-- Preload fonts -->
+  <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/remixicon.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="assets/css/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/tom-select.min.css">
+  <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="assets/css/aos.min.css">
+  <noscript><style>[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+  <!-- Tailwind Generated CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Theme and direction before the first paint -->
+  <script src="assets/js/theme30f4.js?v=3"></script>
+</head>
+<body class="bg-bg-primary text-text-primary font-sans">
+  <!-- Start Preloader -->
+  <div class="preloader" data-preloader aria-hidden="true">
+    <span class="preloader-bubbles"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+    <span class="preloader-orb"></span>
+  </div>
+  <!-- End Preloader -->
+  <!-- Start Header Top Bar -->
+  <div class="bg-primary text-body-sm text-white [--topbar-icon-active:var(--color-emergency-deep)]" data-topbar>
+    <div class="container-full max-w-411 flex h-12.5 items-center gap-6">
+      <p class="hidden sm:block">
+        <span>Working Hour:</span> Mon-Sat 9:00AM -8:00PM
+      </p>
+      <p class="hidden truncate lg:block">
+        <span>Email:</span>
+        <a href="https://html.sumons.com/cdn-cgi/l/email-protection#93fafdf5fcd3d5faebe6fefabdf0fcfe" class="topbar-icon"><span class="__cf_email__" data-cfemail="721b1c141d32341b0a071f1b5c111d1f">[email&#160;protected]</span></a>
+      </p>
+      <div class="hidden items-center gap-4 lg:flex">
+        <span>Follow:</span>
+        <a href="https://www.facebook.com/" class="topbar-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><span><i class="ri-facebook-fill"></i></span></a>
+        <a href="https://www.instagram.com/" class="topbar-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><span><i class="ri-instagram-line"></i></span></a>
+        <a href="https://www.linkedin.com/" class="topbar-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span><i class="ri-linkedin-fill"></i></span></a>
+      </div>
+      <div class="flex flex-1 items-center gap-4 sm:ms-auto sm:flex-none">
+        <a href="tel:+14239524294" class="me-auto flex items-center gap-1.5 font-medium group sm:me-0 xl:hidden">
+          <span class="text-base"><i class="ri-phone-line"></i></span>
+          <bdi dir="ltr" class="group-hover:underline">+1 423-952-4294</bdi>
+        </a>
+        <div class="relative">
+          <button type="button" class="topbar-icon text-base flex" data-lang-toggle aria-controls="lang-menu" aria-expanded="false" aria-haspopup="true" aria-label="Change language">
+            <span class="text-base"><i class="ri-global-line"></i></span>
+          </button>
+          <ul class="topbar-menu" id="lang-menu" data-lang-menu>
+            <li><button type="button" class="lang-option" data-lang-code="en" aria-current="true">English</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="es" aria-current="false">Español</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="fr" aria-current="false">Français</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="de" aria-current="false">Deutsch</button></li>
+          </ul>
+        </div>
+        <a href="cart.html" class="topbar-icon text-base" aria-label="Cart">
+          <span><i class="ri-shopping-cart-line"></i></span>
+        </a>
+        <a href="login.html" class="topbar-icon text-base" aria-label="Account">
+          <span><i class="ri-user-line"></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Header Top Bar -->
+  <!-- Start Main Header -->
+  <header class="header-overlay sticky top-0 z-50 text-white transition-[background-color,box-shadow] duration-300 data-stuck:bg-ink data-stuck:shadow-header">
+    <div class="container-full max-w-411 flex h-19 items-center gap-4 lg:h-25">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Fixumi home">
+        <img src="assets/img/logo-light.svg" alt="Fixumi logo">
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="flex flex-col px-3 py-2 lg:h-full lg:flex-row lg:p-0">
+          <li class="#">
+            <a href="index.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Home</span>
+              <!-- <span><i class="ri-add-line dropdown-caret text-base"></i></span> -->
+            </a>
+           <!--  <ul class="dropdown-menu">
+              <li><a href="index.html" class="dropdown-link">All Type Repair</a></li>
+              <li><a href="home-v2.html" class="dropdown-link">Computer Repair</a></li>
+              <li><a href="home-v3.html" class="dropdown-link" aria-current="page">Mobile Repair</a></li>
+              <li><a href="home-v4.html" class="dropdown-link">Electrical Repair</a></li>
+              <li><a href="home-v5.html" class="dropdown-link">Air Condition Repair</a></li>
+            </ul> -->
+          </li>
+          <li class="hidden xl:block"><a href="about-us.html" class="nav-link p-2.5">About</a></li>
+          <li class="dropdown">
+            <button type="button" class="nav-link p-2.5" aria-expanded="false">
+              <span>Services</span>
+              <span><i class="ri-add-line dropdown-caret text-base"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="services.html" class="dropdown-link">All Services</a></li>
+              <li><a href="service-details.html" class="dropdown-link">Service Details</a></li>
+              <li><a href="pricing.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="book-schedule.html" class="dropdown-link">Book A Schedule</a></li>
+            </ul>
+          </li>
+          <!-- <li class="dropdown">
+            <button type="button" class="nav-link p-2.5" aria-expanded="false">
+              <span>Pages</span>
+              <span><i class="ri-add-line dropdown-caret text-base"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="xl:hidden" data-nav-compact><a href="about-us.html" class="dropdown-link">About</a></li>
+              <li><a href="technician.html" class="dropdown-link">Technicians</a></li>
+              <li><a href="technician-details.html" class="dropdown-link">Technician Details</a></li>
+              <li><a href="projects.html" class="dropdown-link">Projects</a></li>
+              <li><a href="project-details.html" class="dropdown-link">Project Details</a></li>
+              <li><a href="testimonials.html" class="dropdown-link">Testimonials</a></li>
+              <li><a href="store-locator.html" class="dropdown-link">Store Locator</a></li>
+              <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+              <li><a href="error.html" class="dropdown-link">404 Error</a></li>
+            </ul>
+          </li> -->
+          <li class="dropdown">
+            <a href="blog.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Blog</span>
+              <span><i class="#"></i></span>
+            </a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="blog.html" class="dropdown-link">Blog Grid</a></li>
+              <li><a href="blog-v2.html" class="dropdown-link">Blog List</a></li>
+              <li><a href="blog-details.html" class="dropdown-link">Blog Details</a></li>
+            </ul> -->
+          </li>
+          <li class="dropdown">
+            <a href="shop.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Shop</span>
+              <span><i class="#"></i></span>
+            </a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="shop.html" class="dropdown-link">Shop</a></li>
+              <li><a href="shop-details.html" class="dropdown-link">Shop Details</a></li>
+              <li><a href="cart.html" class="dropdown-link">Cart</a></li>
+              <li><a href="checkout.html" class="dropdown-link">Checkout</a></li>
+            </ul> -->
+          </li>
+          <li><a href="contact-us.html" class="nav-link p-2.5">Contact</a></li>
+          <li class="p-2.5 lg:hidden">
+            <a href="book-schedule.html" class="btn-primary w-full">
+              <span>Book A Repair</span>
+              <span><i class="ri-calendar-line text-base"></i></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="ms-auto flex items-center gap-4 lg:ms-0 lg:gap-6">
+        <div class="hidden xl:block text-body">
+          <span>Need Support?</span>
+          <a href="tel:+14239524294" class="block font-heading text-xl font-semibold text-secondary transition-colors duration-300 hover:text-primary">
+            <bdi dir="ltr">+1 423-952-4294</bdi>
+          </a>
+        </div>
+        <button type="button" class="grid size-10 place-items-center rounded-full bg-bg-muted text-text-primary transition-colors duration-300 hover:bg-primary hover:text-text-inverse aria-expanded:bg-primary aria-expanded:text-text-inverse lg:size-12.5" data-search-toggle aria-controls="header-search" aria-expanded="false" aria-label="Search">
+          <span class="text-base" data-icon="open"><i class="ri-search-line"></i></span>
+          <span class="text-base hidden" data-icon="close"><i class="ri-close-line"></i></span>
+        </button>
+        <a href="book-schedule.html" class="btn-primary hidden lg:inline-flex">
+          <span>Book A Repair</span>
+          <span><i class="ri-calendar-line text-base"></i></span>
+        </a>
+        <button type="button" class="-me-2 p-2 transition-colors duration-300 hover:text-primary aria-expanded:text-primary lg:hidden" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Toggle menu">
+          <span><i class="ri-menu-line text-2xl" data-icon="open"></i></span>
+          <span><i class="ri-close-line hidden text-2xl" data-icon="close"></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="header-search" id="header-search" data-search-panel>
+      <form role="search" class="container-full max-w-411 flex items-center gap-3 py-5">
+        <label for="header-search-input" class="sr-only">Search the site</label>
+        <input id="header-search-input" type="search" autocomplete="off" placeholder="What do you need fixed?" class="h-11.5 md:h-13.5 min-w-0 flex-1 rounded-base bg-bg-muted px-4 text-body text-text-primary border border-primary outline-none placeholder:text-text-secondary">
+        <button type="submit" class="btn-primary">
+          <span><i class="ri-search-line text-base"></i></span>
+          <span class="hidden xsm:inline">Search</span>
+        </button>
+      </form>
+    </div>
+  </header>
+  <!-- End Main Header -->
+  <!-- Start Page Banner Section -->
+  <section class="phone-glow relative isolate -mt-19 overflow-hidden bg-ink text-white lg:-mt-25" aria-labelledby="hero-title">
+    <img src="assets/img/page-banner-about.webp" alt="Handyman's gloved hand reaching into a tool belt full of repair tools" class="absolute inset-0 -z-10 size-full object-cover">
+    <div class="hero-overlay absolute inset-0 -z-10"></div>
+    <div class="container flex min-h-60 flex-col justify-center py-12 text-white md:min-h-80 xl:min-h-100">
+      <h1 id="page-banner-title" class="font-heading text-[34px] font-bold leading-[1.16] sm:text-[40px] md:text-[44px] lg:text-[56px]">Our Services</h1>
+      <nav class="mt-4" aria-label="Breadcrumb">
+        <ol class="breadcrumb text-body-lg leading-6">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Services</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!-- End Page Banner Section -->
+  <!-- Start Services Section -->
+  <section class="pt-12.5 sm:pt-16 xl:pt-25" aria-labelledby="services-title">
+    <div class="container">
+      <div class="text-center">
+        <h2 data-aos="fade-up" id="services-title" class="font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11 xl:text-[44px] xl:leading-13.5">Comprehensive Repair Services</h2>
+        <p class="mt-2 text-body-lg leading-6 text-text-secondary">Choose your device category and get back to your routine with our expert repair solutions.</p>
+      </div>
+      <ul data-aos="fade-up" data-aos-delay="150" class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:gap-6">
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">Smartphones &amp; Tablets</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">Screen replacement, battery upgrades, water damage recovery, software fixes.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-smartphones.webp" alt="Technician opening a smartphone with a screwdriver beside its removed screen" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$49</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">Laptop &amp; Desktop</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">Motherboard repair, SSD upgrades, keyboard replacement, virus removal, data recovery services.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-laptop.webp" alt="Technician in blue overalls working inside an open desktop computer tower" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$79</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">AC &amp; HVAC</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">Gas leak repair, compressor fix, thermostat replacement, duct cleaning, installation services.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-ac-hvac.webp" alt="Technician in a blue cap servicing a wall-mounted air conditioner" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$89</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">Home Appliances</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">Washing machine, microwave oven, refrigerator, water purifier — diagnostic &amp; repair.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-home-appliances.webp" alt="Two technicians in navy uniforms repairing a kitchen dishwasher" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$65</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">Tablets &amp; iPads</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">Screen replacement, battery issues, charging port repair, software troubleshooting.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-tablets.webp" alt="Technician in a blue polo repairing an opened tablet on a workbench" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$59</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">TV Repair</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">LED, OLED, Smart TV — screen replacement, power supply fix, motherboard repair, HDMI port issues.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-tv.webp" alt="Technician in yellow gloves repairing a flat-screen television" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$39</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">Solar System Repair</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">Solar panel cleaning, inverter repair, battery replacement, performance optimization.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-solar.webp" alt="Gloved technician servicing a rooftop solar panel" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$49</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">Auto Repair</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">Car, bike, scooter — engine diagnostic, brake repair, battery replacement, electrical system fix.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-auto.webp" alt="Mechanic beside a white car with its engine bay open in a bright garage" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$49</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="service-details.html" class="service-photo-card px-3.75 pt-5.75 xl:px-5.75">
+            <h3 class="font-heading text-h5 font-semibold leading-7 xsm:text-h4 xsm:leading-8">Smart Home Devices</h3>
+            <p class="mt-2 mb-6 leading-6.5 text-text-secondary">Smart speakers, security cameras, doorbells, thermostats — setup, repair &amp; configuration.</p>
+            <span class="service-photo">
+              <img src="assets/img/service-category-smart-home.webp" alt="Technician in a hard hat installing a ceiling-mounted smart detector" class="aspect-376/200 w-full object-cover">
+              <span class="absolute inset-s-4 top-4 z-1 rounded-base bg-secondary px-2 py-1 leading-6.5 text-text-primary">From <bdi dir="ltr">$49</bdi></span>
+              <span class="service-photo-icon"><i class="ri-arrow-right-up-line icon-directional text-base"></i></span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Services Section -->
+  <!-- Start CTA Section -->
+  <section class="py-12.5 sm:py-16 xl:py-25" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="relative flex flex-col gap-6 rounded-[10px] bg-secondary px-4 py-10 text-text-primary sm:px-6 md:min-h-66.5 md:justify-center md:ps-56 md:pe-12 lg:flex-row lg:items-center lg:justify-between lg:rounded-xl lg:pe-8 xl:rounded-[20px] xl:pe-22.75">
+        <img src="assets/img/icons/cta-technician.svg" alt="Technician illustration with a wrench, arms crossed" class="absolute bottom-0 inset-s-8 hidden w-40 md:block">
+        <div>
+          <h2 data-aos="fade-up" id="cta-title" class="font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11 xl:text-[44px] xl:leading-13.5">Need A Service Not Listed?</h2>
+          <p class="mt-2 text-body-lg leading-6">We fix everything! Contact us for custom repairs, bulk orders, or emergency services</p>
+        </div>
+        <a href="contact-us.html" class="btn-primary w-fit shrink-0">
+          <span>Get Custom Quote</span>
+          <span><i class="ri-arrow-right-s-line icon-directional text-base"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End CTA Section -->
+  <!-- Start Footer Section -->
+  <footer class="bg-linear-to-b from-emergency to-emergency-deep text-white">
+    <div class="container">
+      <div class="grid gap-10 pt-16 pb-10 md:grid-cols-2 md:gap-6 xl:pt-25 xl:pb-12.5">
+        <div>
+          <img src="assets/img/logo-light.svg" alt="Fixumi logo" class="block">
+          <p class="mt-4 max-w-106 text-body leading-6.5">One hub for all your repair needs. From smartphones to home appliances, we bring certified technicians and genuine parts right to your doorstep.</p>
+        </div>
+        <div>
+          <div class="flex gap-4">
+            <span class="mt-1.5 grid size-12.5 shrink-0 place-items-center rounded-base bg-secondary text-2xl text-text-primary"><i class="ri-notification-3-line"></i></span>
+            <div>
+              <h2 class="font-heading text-h4 font-semibold leading-8">Newsletter</h2>
+              <p class="mt-1 text-body leading-6.5">Subscribe for 10% off your first repair</p>
+            </div>
+          </div>
+          <form class="mt-4 grid gap-2.5 xsm:flex xsm:gap-0 xsm:rounded-base xsm:border xsm:border-transparent xsm:bg-white xsm:transition-colors xsm:duration-300 xsm:focus-within:border-primary" data-success="Thanks for subscribing! Check your inbox to confirm.">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input id="newsletter-email" type="email" name="email" autocomplete="email" required placeholder="Enter your email address" class="h-11.5 min-w-0 flex-1 rounded-base border border-transparent bg-white px-4 text-body text-text-primary transition-colors duration-300 focus:border-primary outline-none placeholder:text-text-secondary xsm:h-auto xsm:rounded-none xsm:border-0 xsm:bg-transparent">
+            <button type="submit" class="btn-primary">
+              <span>Subscribe</span>
+              <span><i class="ri-send-ins-line text-base"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr class="border-white/10">
+      <div class="grid gap-7.5 py-10 xsm:grid-cols-[1fr_calc(50%+60px)] md:gap-x-6 md:gap-y-6 md:grid-cols-[auto_minmax(200px,auto)_auto_minmax(200px,auto)] xl:py-12.5">
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Quick Links</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="about-us.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact-us.html" class="footer-link">Careers</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Our Services</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="service-details.html" class="footer-link">Computer Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Mobile Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Air Condition Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">TV Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Refrigerator Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Washing Machine Repair</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Socials</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="https://www.facebook.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://x.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.youtube.com/" class="footer-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Contact Us</h2>
+          <ul class="mt-6 flex flex-col gap-2 text-body leading-6.5 text-text-muted">
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-map-pin-line"></i></span>
+              <span><bdi dir="ltr">DEPZ, Savar, Dhaka-1349</bdi></span>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-phone-fill"></i></span>
+              <a href="tel:+14239524294" class="footer-link"><bdi dir="ltr">+1 423-952-4294</bdi></a>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-mail-line"></i></span>
+              <a href="https://html.sumons.com/cdn-cgi/l/email-protection#452d20293505232c3d30282c6b262a28" class="footer-link"><span class="__cf_email__" data-cfemail="4c2429203c0c2a2534392125622f2321">[email&#160;protected]</span></a>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-time-line"></i></span>
+              <span><bdi dir="ltr" class="whitespace-nowrap">Mon&ndash;Sat: 9:00am &ndash; 8:00pm</bdi><br>Sunday: Closed</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-white/10">
+      <div class="flex flex-col gap-2 py-6 text-body leading-6.5 text-text-muted md:flex-row md:items-center md:justify-between xl:py-7.5">
+        <p class="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <span>&copy; <bdi dir="ltr">2026</bdi> Fixumi. All rights reserved</span>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <span class="flex items-center gap-1">
+            <span>Made with</span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span>in SumonsCreation</span>
+          </span>
+        </p>
+        <p class="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <a href="terms-condition.html" class="footer-link">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+  <!-- Start Scroll Top -->
+  <button type="button" class="scroll-top" data-scroll-top aria-label="Back to top"><span><i class="ri-arrow-up-line text-xl"></i></span></button>
+  <!-- End Scroll Top -->
+  <!-- Plugin JS -->
+  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/tom-select.min.js"></script>
+  <script src="assets/js/flatpickr.min.js"></script>
+  <script src="assets/js/aos.min.js"></script>
+  <!-- Project JS -->
+  <script src="assets/js/main.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a531d3d10fbc5cf7',t:'MTc5MzQ0MDk4MA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='../cdn-cgi/challenge-platform/h/g/scripts/jsd/c787ce48cf6b/maind94c.js?ray=a531d3d10fbc5cf7',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"6f756f02820545e3be40ddc6eb6154c3","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>

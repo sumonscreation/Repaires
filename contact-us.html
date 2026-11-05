@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mobile phone repair website demo: same-day screen, battery, charging port and water damage repairs with warranty.">
+  <meta name="keywords" content="handyman, home repair, repair services, appliance repair, computer repair, mobile repair, ac repair, electrician, maintenance, service booking, admin dashboard, tailwind css template, html template">
+  <meta name="author" content="sumons">
+  <title>Mobile Repair | Fixumi </title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/img/favicon.webp">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch.webp">
+  <!-- Preload fonts -->
+  <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/remixicon.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="assets/css/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/tom-select.min.css">
+  <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="assets/css/aos.min.css">
+  <noscript><style>[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+  <!-- Tailwind Generated CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Theme and direction before the first paint -->
+  <script src="assets/js/theme30f4.js?v=3"></script>
+</head>
+<body class="bg-bg-primary text-text-primary font-sans">
+  <!-- Start Preloader -->
+  <div class="preloader" data-preloader aria-hidden="true">
+    <span class="preloader-bubbles"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+    <span class="preloader-orb"></span>
+  </div>
+  <!-- End Preloader -->
+  <!-- Start Header Top Bar -->
+  <div class="bg-primary text-body-sm text-white [--topbar-icon-active:var(--color-emergency-deep)]" data-topbar>
+    <div class="container-full max-w-411 flex h-12.5 items-center gap-6">
+      <p class="hidden sm:block">
+        <span>Working Hour:</span> Mon-Sat 9:00AM -8:00PM
+      </p>
+      <p class="hidden truncate lg:block">
+        <span>Email:</span>
+        <a href="https://html.sumons.com/cdn-cgi/l/email-protection#93fafdf5fcd3d5faebe6fefabdf0fcfe" class="topbar-icon"><span class="__cf_email__" data-cfemail="721b1c141d32341b0a071f1b5c111d1f">[email&#160;protected]</span></a>
+      </p>
+      <div class="hidden items-center gap-4 lg:flex">
+        <span>Follow:</span>
+        <a href="https://www.facebook.com/" class="topbar-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><span><i class="ri-facebook-fill"></i></span></a>
+        <a href="https://www.instagram.com/" class="topbar-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><span><i class="ri-instagram-line"></i></span></a>
+        <a href="https://www.linkedin.com/" class="topbar-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span><i class="ri-linkedin-fill"></i></span></a>
+      </div>
+      <div class="flex flex-1 items-center gap-4 sm:ms-auto sm:flex-none">
+        <a href="tel:+14239524294" class="me-auto flex items-center gap-1.5 font-medium group sm:me-0 xl:hidden">
+          <span class="text-base"><i class="ri-phone-line"></i></span>
+          <bdi dir="ltr" class="group-hover:underline">+1 423-952-4294</bdi>
+        </a>
+        <div class="relative">
+          <button type="button" class="topbar-icon text-base flex" data-lang-toggle aria-controls="lang-menu" aria-expanded="false" aria-haspopup="true" aria-label="Change language">
+            <span class="text-base"><i class="ri-global-line"></i></span>
+          </button>
+          <ul class="topbar-menu" id="lang-menu" data-lang-menu>
+            <li><button type="button" class="lang-option" data-lang-code="en" aria-current="true">English</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="es" aria-current="false">Español</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="fr" aria-current="false">Français</button></li>
+            <li><button type="button" class="lang-option" data-lang-code="de" aria-current="false">Deutsch</button></li>
+          </ul>
+        </div>
+        <a href="cart.html" class="topbar-icon text-base" aria-label="Cart">
+          <span><i class="ri-shopping-cart-line"></i></span>
+        </a>
+        <a href="login.html" class="topbar-icon text-base" aria-label="Account">
+          <span><i class="ri-user-line"></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Header Top Bar -->
+  <!-- Start Main Header -->
+  <header class="header-overlay sticky top-0 z-50 text-white transition-[background-color,box-shadow] duration-300 data-stuck:bg-ink data-stuck:shadow-header">
+    <div class="container-full max-w-411 flex h-19 items-center gap-4 lg:h-25">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Fixumi home">
+        <img src="assets/img/logo-light.svg" alt="Fixumi logo">
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul class="flex flex-col px-3 py-2 lg:h-full lg:flex-row lg:p-0">
+          <li class="#">
+            <a href="index.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Home</span>
+              <!-- <span><i class="ri-add-line dropdown-caret text-base"></i></span> -->
+            </a>
+           <!--  <ul class="dropdown-menu">
+              <li><a href="index.html" class="dropdown-link">All Type Repair</a></li>
+              <li><a href="home-v2.html" class="dropdown-link">Computer Repair</a></li>
+              <li><a href="home-v3.html" class="dropdown-link" aria-current="page">Mobile Repair</a></li>
+              <li><a href="home-v4.html" class="dropdown-link">Electrical Repair</a></li>
+              <li><a href="home-v5.html" class="dropdown-link">Air Condition Repair</a></li>
+            </ul> -->
+          </li>
+          <li class="hidden xl:block"><a href="about-us.html" class="nav-link p-2.5">About</a></li>
+          <li class="dropdown">
+            <button type="button" class="nav-link p-2.5" aria-expanded="false">
+              <span>Services</span>
+              <span><i class="ri-add-line dropdown-caret text-base"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="services.html" class="dropdown-link">All Services</a></li>
+              <li><a href="service-details.html" class="dropdown-link">Service Details</a></li>
+              <li><a href="pricing.html" class="dropdown-link">Pricing Plans</a></li>
+              <li><a href="book-schedule.html" class="dropdown-link">Book A Schedule</a></li>
+            </ul>
+          </li>
+          <!-- <li class="dropdown">
+            <button type="button" class="nav-link p-2.5" aria-expanded="false">
+              <span>Pages</span>
+              <span><i class="ri-add-line dropdown-caret text-base"></i></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="xl:hidden" data-nav-compact><a href="about-us.html" class="dropdown-link">About</a></li>
+              <li><a href="technician.html" class="dropdown-link">Technicians</a></li>
+              <li><a href="technician-details.html" class="dropdown-link">Technician Details</a></li>
+              <li><a href="projects.html" class="dropdown-link">Projects</a></li>
+              <li><a href="project-details.html" class="dropdown-link">Project Details</a></li>
+              <li><a href="testimonials.html" class="dropdown-link">Testimonials</a></li>
+              <li><a href="store-locator.html" class="dropdown-link">Store Locator</a></li>
+              <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+              <li><a href="error.html" class="dropdown-link">404 Error</a></li>
+            </ul>
+          </li> -->
+          <li class="dropdown">
+            <a href="blog.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Blog</span>
+              <span><i class="#"></i></span>
+            </a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="blog.html" class="dropdown-link">Blog Grid</a></li>
+              <li><a href="blog-v2.html" class="dropdown-link">Blog List</a></li>
+              <li><a href="blog-details.html" class="dropdown-link">Blog Details</a></li>
+            </ul> -->
+          </li>
+          <li class="dropdown">
+            <a href="shop.html" class="nav-link p-2.5" aria-expanded="false">
+              <span>Shop</span>
+              <span><i class="#"></i></span>
+            </a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="shop.html" class="dropdown-link">Shop</a></li>
+              <li><a href="shop-details.html" class="dropdown-link">Shop Details</a></li>
+              <li><a href="cart.html" class="dropdown-link">Cart</a></li>
+              <li><a href="checkout.html" class="dropdown-link">Checkout</a></li>
+            </ul> -->
+          </li>
+          <li><a href="contact-us.html" class="nav-link p-2.5">Contact</a></li>
+          <li class="p-2.5 lg:hidden">
+            <a href="book-schedule.html" class="btn-primary w-full">
+              <span>Book A Repair</span>
+              <span><i class="ri-calendar-line text-base"></i></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="ms-auto flex items-center gap-4 lg:ms-0 lg:gap-6">
+        <div class="hidden xl:block text-body">
+          <span>Need Support?</span>
+          <a href="tel:+14239524294" class="block font-heading text-xl font-semibold text-secondary transition-colors duration-300 hover:text-primary">
+            <bdi dir="ltr">+1 423-952-4294</bdi>
+          </a>
+        </div>
+        <button type="button" class="grid size-10 place-items-center rounded-full bg-bg-muted text-text-primary transition-colors duration-300 hover:bg-primary hover:text-text-inverse aria-expanded:bg-primary aria-expanded:text-text-inverse lg:size-12.5" data-search-toggle aria-controls="header-search" aria-expanded="false" aria-label="Search">
+          <span class="text-base" data-icon="open"><i class="ri-search-line"></i></span>
+          <span class="text-base hidden" data-icon="close"><i class="ri-close-line"></i></span>
+        </button>
+        <a href="book-schedule.html" class="btn-primary hidden lg:inline-flex">
+          <span>Book A Repair</span>
+          <span><i class="ri-calendar-line text-base"></i></span>
+        </a>
+        <button type="button" class="-me-2 p-2 transition-colors duration-300 hover:text-primary aria-expanded:text-primary lg:hidden" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Toggle menu">
+          <span><i class="ri-menu-line text-2xl" data-icon="open"></i></span>
+          <span><i class="ri-close-line hidden text-2xl" data-icon="close"></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="header-search" id="header-search" data-search-panel>
+      <form role="search" class="container-full max-w-411 flex items-center gap-3 py-5">
+        <label for="header-search-input" class="sr-only">Search the site</label>
+        <input id="header-search-input" type="search" autocomplete="off" placeholder="What do you need fixed?" class="h-11.5 md:h-13.5 min-w-0 flex-1 rounded-base bg-bg-muted px-4 text-body text-text-primary border border-primary outline-none placeholder:text-text-secondary">
+        <button type="submit" class="btn-primary">
+          <span><i class="ri-search-line text-base"></i></span>
+          <span class="hidden xsm:inline">Search</span>
+        </button>
+      </form>
+    </div>
+  </header>
+  <!-- End Main Header -->
+  <!-- Start Page Banner Section -->
+  <section class="phone-glow relative isolate -mt-19 overflow-hidden bg-ink text-white lg:-mt-25" aria-labelledby="hero-title">
+    <img src="assets/img/page-banner-about.webp" alt="Handyman's gloved hand reaching into a tool belt full of repair tools" class="absolute inset-0 -z-10 size-full object-cover">
+    <div class="hero-overlay absolute inset-0 -z-10"></div>
+    <div class="container flex min-h-60 flex-col justify-center py-12 text-white md:min-h-80 xl:min-h-100">
+      <h1 id="page-banner-title" class="font-heading text-[34px] font-bold leading-[1.16] sm:text-[40px] md:text-[44px] lg:text-[56px]">Contact Us</h1>
+      <nav class="mt-4" aria-label="Breadcrumb">
+        <ol class="breadcrumb text-body-lg leading-6">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Contact Us</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!-- End Page Banner Section -->
+  <!-- Start Contact Section -->
+  <section class="container py-12.5 sm:py-16 xl:py-25" aria-labelledby="contact-title">
+    <h2 data-aos="fade-up" id="contact-title" class="text-center font-heading text-[30px] font-bold leading-10 sm:text-[32px] sm:leading-11 xl:text-[44px] xl:leading-13.5">Contact Us</h2>
+    <p class="mx-auto mt-2 max-w-155.5 text-center text-body-lg leading-6 text-text-secondary">Have a question or need a repair? Reach out to us — we're here to help, <bdi dir="ltr">24/7</bdi>.</p>
+    <div class="mt-8 grid gap-8 lg:grid-cols-[872fr_424fr] lg:gap-6">
+      <form action="#" data-success="Thanks! Your message has been sent. We will reply within one business day." class="min-w-0">
+        <h3 class="font-heading text-h4 font-semibold leading-8">Send us a message</h3>
+        <p class="text-body leading-6.5 text-text-secondary">Fill out the form below and we'll get back to you within <bdi dir="ltr">2 hours</bdi>.</p>
+        <div class="mt-4 grid gap-4 sm:grid-cols-2 xl:gap-x-6">
+          <div>
+            <label for="contact-first-name" class="block text-body leading-6.5">First Name</label>
+            <input id="contact-first-name" type="text" name="first_name" autocomplete="given-name" required placeholder="Michael" class="form-field mt-1">
+          </div>
+          <div>
+            <label for="contact-last-name" class="block text-body leading-6.5">Last Name</label>
+            <input id="contact-last-name" type="text" name="last_name" autocomplete="family-name" required placeholder="Atkinson" class="form-field mt-1">
+          </div>
+          <div class="sm:col-span-2">
+            <label for="contact-email" class="block text-body leading-6.5">Email Address</label>
+            <input id="contact-email" type="email" name="email" autocomplete="email" required placeholder="michael@filcro.com" class="form-field mt-1">
+          </div>
+          <div class="sm:col-span-2">
+            <label for="contact-phone" class="block text-body leading-6.5">Phone Number</label>
+            <input id="contact-phone" type="tel" name="phone" autocomplete="tel" dir="ltr" placeholder="+1 (800) 555 1736" class="form-field mt-1">
+          </div>
+          <div class="sm:col-span-2">
+            <label for="contact-service" class="block text-body leading-6.5">Service Interested In</label>
+            <div class="relative mt-1">
+              <select id="contact-service" name="service" class="form-field" data-select>
+                <option value="" selected disabled>Select a Service</option>
+                <option>Computer Repair</option>
+                <option>Mobile Repair</option>
+                <option>Air Condition Repair</option>
+                <option>TV Repair</option>
+                <option>Refrigerator Repair</option>
+                <option>Washing Machine Repair</option>
+              </select>
+              <span class="field-icon"><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="contact-message" class="block text-body leading-6.5">Your Message</label>
+            <textarea id="contact-message" name="message" required placeholder="Tell us about your repair need..." class="form-field mt-1 [--field-height:150px]"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary mt-6 w-full xsm:w-auto">
+          <span>Send Message</span>
+          <span><i class="ri-send-ins-line text-base"></i></span>
+        </button>
+      </form>
+      <aside class="w-full justify-self-end lg:max-w-78" aria-label="Contact details">
+        <ul data-aos="fade-up" data-aos-delay="150" class="grid gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-1">
+          <li class="flex min-h-27.25 gap-3 rounded-base border border-border-muted px-3 py-4 md:gap-4 md:px-4">
+            <span class="shrink-0 md:mt-3.5"><img src="assets/img/icons/contact-call.svg" alt="Phone handset icon" class="block size-9 md:size-12.5"></span>
+            <div>
+              <h3 class="font-heading text-h5 font-semibold leading-7">Call Us</h3>
+              <a href="tel:+14239524294" class="block text-body-sm leading-5.25 md:text-body md:leading-6.5 text-text-secondary transition-colors duration-300 hover:text-primary"><bdi dir="ltr">+1 423-952-4294</bdi></a>
+              <p class="text-caption leading-3.75 text-text-secondary"><bdi dir="ltr">24/7 Emergency Support</bdi></p>
+            </div>
+          </li>
+          <li class="flex min-h-27.25 gap-3 rounded-base border border-border-muted px-3 py-4 md:gap-4 md:px-4">
+            <span class="shrink-0 md:mt-3.5"><img src="assets/img/icons/contact-email.svg" alt="Envelope icon" class="block size-9 md:size-12.5"></span>
+            <div>
+              <h3 class="font-heading text-h5 font-semibold leading-7">Email Us</h3>
+              <a href="https://html.sumons.com/cdn-cgi/l/email-protection#4a222f263a0a2c23323f272364292527" class="block text-body-sm leading-5.25 md:text-body md:leading-6.5 text-text-secondary transition-colors duration-300 hover:text-primary"><span class="__cf_email__" data-cfemail="d1b9b4bda191b7b8a9a4bcb8ffb2bebc">[email&#160;protected]</span></a>
+              <p class="text-caption leading-3.75 text-text-secondary">We reply within <bdi dir="ltr">2 hours</bdi></p>
+            </div>
+          </li>
+          <li class="flex min-h-27.25 gap-3 rounded-base border border-border-muted px-3 py-4 md:gap-4 md:px-4">
+            <span class="shrink-0 md:mt-3.5"><img src="assets/img/icons/contact-visit.svg" alt="Location pin icon" class="block size-9 md:size-12.5"></span>
+            <div>
+              <h3 class="font-heading text-h5 font-semibold leading-7">Visit Us</h3>
+              <address class="text-body-sm not-italic leading-5.25 md:text-body md:leading-6.5 text-text-secondary"><bdi dir="ltr">DEPZ, Savar, Dhaka-1349<br>Bangladesh</bdi></address>
+            </div>
+          </li>
+          <li class="flex min-h-27.25 gap-3 rounded-base border border-border-muted px-3 py-4 md:gap-4 md:px-4">
+            <span class="shrink-0 md:mt-3.5"><img src="assets/img/icons/contact-hours.svg" alt="Clock icon" class="block size-9 md:size-12.5"></span>
+            <div>
+              <h3 class="font-heading text-h5 font-semibold leading-7">Working Hours</h3>
+              <p class="text-body-sm leading-5.25 md:text-body md:leading-6.5 text-text-secondary"><bdi dir="ltr" class="whitespace-nowrap">Mon–Sat: 9:00am – 8:00pm</bdi><br>Sunday: Closed</p>
+            </div>
+          </li>
+          <li class="rounded-base border border-border-muted px-3 pt-4 pb-6 sm:col-span-2 md:px-4 lg:col-span-1">
+            <h3 class="font-heading text-h5 font-semibold leading-7">Connect With Us</h3>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <a href="https://www.facebook.com/" class="topbar-icon grid size-10 place-items-center rounded-full bg-bg-card text-text-secondary md:size-12.5" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><span><i class="ri-facebook-fill text-base"></i></span></a>
+              <a href="https://www.instagram.com/" class="topbar-icon grid size-10 place-items-center rounded-full bg-bg-card text-text-secondary md:size-12.5" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><span><i class="ri-instagram-line text-base"></i></span></a>
+              <a href="https://www.linkedin.com/" class="topbar-icon grid size-10 place-items-center rounded-full bg-bg-card text-text-secondary md:size-12.5" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span><i class="ri-linkedin-fill text-base"></i></span></a>
+              <a href="https://x.com/" class="topbar-icon grid size-10 place-items-center rounded-full bg-bg-card text-text-secondary md:size-12.5" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><span><i class="ri-twitter-x-line text-base"></i></span></a>
+              <a href="https://www.youtube.com/" class="topbar-icon grid size-10 place-items-center rounded-full bg-bg-card text-text-secondary md:size-12.5" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><span><i class="ri-youtube-fill text-base"></i></span></a>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+  <!-- Start Map Section -->
+  <section class="mx-auto max-w-full-width" aria-labelledby="map-of-the-fixumi-service-area-title">
+    <h2 id="map-of-the-fixumi-service-area-title" class="sr-only">Map of the Fixumi service area</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.313975639341!2d90.27602147431624!3d23.949335081111954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e8785562c3c3%3A0xf4b3024c42d648d5!2sDhaka%20Export%20Processing%20Zone%20DEPZ!5e0!3m2!1sen!2sbd!4v1793526618676!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </section>
+  <!-- End Map Section -->
+  <!-- Start Footer Section -->
+  <footer class="bg-linear-to-b from-emergency to-emergency-deep text-white">
+    <div class="container">
+      <div class="grid gap-10 pt-16 pb-10 md:grid-cols-2 md:gap-6 xl:pt-25 xl:pb-12.5">
+        <div>
+          <img src="assets/img/logo-light.svg" alt="Fixumi logo" class="block">
+          <p class="mt-4 max-w-106 text-body leading-6.5">One hub for all your repair needs. From smartphones to home appliances, we bring certified technicians and genuine parts right to your doorstep.</p>
+        </div>
+        <div>
+          <div class="flex gap-4">
+            <span class="mt-1.5 grid size-12.5 shrink-0 place-items-center rounded-base bg-secondary text-2xl text-text-primary"><i class="ri-notification-3-line"></i></span>
+            <div>
+              <h2 class="font-heading text-h4 font-semibold leading-8">Newsletter</h2>
+              <p class="mt-1 text-body leading-6.5">Subscribe for 10% off your first repair</p>
+            </div>
+          </div>
+          <form class="mt-4 grid gap-2.5 xsm:flex xsm:gap-0 xsm:rounded-base xsm:border xsm:border-transparent xsm:bg-white xsm:transition-colors xsm:duration-300 xsm:focus-within:border-primary" data-success="Thanks for subscribing! Check your inbox to confirm.">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input id="newsletter-email" type="email" name="email" autocomplete="email" required placeholder="Enter your email address" class="h-11.5 min-w-0 flex-1 rounded-base border border-transparent bg-white px-4 text-body text-text-primary transition-colors duration-300 focus:border-primary outline-none placeholder:text-text-secondary xsm:h-auto xsm:rounded-none xsm:border-0 xsm:bg-transparent">
+            <button type="submit" class="btn-primary">
+              <span>Subscribe</span>
+              <span><i class="ri-send-ins-line text-base"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr class="border-white/10">
+      <div class="grid gap-7.5 py-10 xsm:grid-cols-[1fr_calc(50%+60px)] md:gap-x-6 md:gap-y-6 md:grid-cols-[auto_minmax(200px,auto)_auto_minmax(200px,auto)] xl:py-12.5">
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Quick Links</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="about-us.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact-us.html" class="footer-link">Careers</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Our Services</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="service-details.html" class="footer-link">Computer Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Mobile Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Air Condition Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">TV Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Refrigerator Repair</a></li>
+            <li><a href="service-details.html" class="footer-link">Washing Machine Repair</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Socials</h2>
+          <ul class="mt-4 lg:mt-6 lg:list-disc lg:ps-6 text-body leading-6.5 text-text-muted">
+            <li><a href="https://www.facebook.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://x.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.youtube.com/" class="footer-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-heading text-h5 font-semibold leading-7 whitespace-nowrap">Contact Us</h2>
+          <ul class="mt-6 flex flex-col gap-2 text-body leading-6.5 text-text-muted">
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-map-pin-line"></i></span>
+              <span><bdi dir="ltr">DEPZ, Savar, Dhaka-1349</bdi></span>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-phone-fill"></i></span>
+              <a href="tel:+14239524294" class="footer-link"><bdi dir="ltr">+1 423-952-4294</bdi></a>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-mail-line"></i></span>
+              <a href="https://html.sumons.com/cdn-cgi/l/email-protection#4c2429203c0c2a2534392125622f2321" class="footer-link"><span class="__cf_email__" data-cfemail="8ee6ebe2fecee8e7f6fbe3e7a0ede1e3">[email&#160;protected]</span></a>
+            </li>
+            <li class="flex gap-4">
+              <span class="text-base text-secondary"><i class="ri-time-line"></i></span>
+              <span><bdi dir="ltr" class="whitespace-nowrap">Mon&ndash;Sat: 9:00am &ndash; 8:00pm</bdi><br>Sunday: Closed</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-white/10">
+      <div class="flex flex-col gap-2 py-6 text-body leading-6.5 text-text-muted md:flex-row md:items-center md:justify-between xl:py-7.5">
+        <p class="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <span>&copy; <bdi dir="ltr">2026</bdi> Fixumi. All rights reserved</span>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <span class="flex items-center gap-1">
+            <span>Made with</span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span>in sumons</span>
+          </span>
+        </p>
+        <p class="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <span class="hidden sm:inline" aria-hidden="true">|</span>
+          <a href="terms-condition.html" class="footer-link">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+  <!-- Start Scroll Top -->
+  <button type="button" class="scroll-top" data-scroll-top aria-label="Back to top"><span><i class="ri-arrow-up-line text-xl"></i></span></button>
+  <!-- End Scroll Top -->
+  <!-- Plugin JS -->
+  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/tom-select.min.js"></script>
+  <script src="assets/js/flatpickr.min.js"></script>
+  <script src="assets/js/aos.min.js"></script>
+  <!-- Project JS -->
+  <script src="assets/js/main.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a531d3f2e9b25cf7',t:'MTc5MzQ0MDk4Ng=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='../cdn-cgi/challenge-platform/h/g/scripts/jsd/c787ce48cf6b/maine143.js?ray=a531d3f2e9b25cf7',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"6f756f02820545e3be40ddc6eb6154c3","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>
